@@ -632,6 +632,26 @@ video {
   max-width: 24rem;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -678,6 +698,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
@@ -734,11 +758,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-darkPurple {
   --tw-text-opacity: 1;
   color: hsl(258 76% 13% / var(--tw-text-opacity));
@@ -752,6 +771,13 @@ video {
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+:root {
+  --darkPurple: hsl(258, 76%, 13%);
+  --lightPurple: hsl(272, 98%, 38%);
+  --smokeDarkBlue: hsl(226, 39%, 31%);
+  --pink: hsl(302, 42%, 55%);
 }
 
 body {
@@ -771,7 +797,6 @@ body {
 
 .animated-underline {
   display: inline-block;
-  color: #ccff33 !important;
   text-decoration: none;
   margin-bottom: 25px;
 }
@@ -779,7 +804,8 @@ body {
 .animated-underline::after {
   display: block;
   content: '';
-  border-bottom: solid 3px #ccff33;
+  border-bottom: solid 3px var(--pink);
+  border-radius: 5px;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
