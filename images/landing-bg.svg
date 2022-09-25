@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="3840"
-   height="2454.291"
-   viewBox="0 0 3840 2454.291"
+   width="2048"
+   height="1324.052"
+   viewBox="0 0 2048 1324.052"
    version="1.1"
    id="svg5"
    sodipodi:docname="landing-bg.svg"
@@ -28,49 +28,49 @@
      units="px"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.14518229"
-     inkscape:cx="3144.3229"
-     inkscape:cy="2180.0179"
+     inkscape:zoom="0.82127506"
+     inkscape:cx="2217.8927"
+     inkscape:cy="1023.4086"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="0,2629.9323"
+       position="0.00013011713,1582.3902"
        orientation="-1,0"
        id="guide950"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="5,2454.291"
+       position="5.0001301,1406.7489"
        orientation="0,1"
        id="guide952"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="3839.9999,2616.1565"
+       position="2048.0001,1668.4888"
        orientation="-1,0"
        id="guide954"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="-89.5426,-83.661656"
+       position="-89.54247,0"
        orientation="0,1"
        id="guide956"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
-       position="-113.65022,294.29098"
+       position="-113.65009,-753.25113"
        orientation="0,1"
        id="guide958"
        inkscape:label=""
@@ -95,7 +95,7 @@
      id="layer2"
      inkscape:label="Layer 2"
      style="display:none"
-     transform="translate(0,3.1640626e-5)"
+     transform="translate(1.3011713e-4,3.4620028e-5)"
      sodipodi:insensitive="true">
     <image
        width="3840"
@@ -1553,7 +1553,7 @@ QmCC
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline;opacity:1"
-     transform="translate(0,3.1640626e-5)">
+     transform="translate(1.3011713e-4,3.4620028e-5)">
     <image
        width="3840"
        height="2537.9526"
@@ -2388,6 +2388,7 @@ gxRiiigLBijFFFAWDFGKKKAsGKMUUUBYMUYoooCwYoxRRQFgxRQaKAsf/9k=
        id="image19374"
        x="0"
        y="-2.3828125e-05"
-       clip-path="url(#clipPath19436)" />
+       clip-path="url(#clipPath19436)"
+       transform="matrix(0.66286029,0,0,0.53948456,-1.3011713e-4,-2.1765122e-5)" />
   </g>
 </svg>
