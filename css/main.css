@@ -696,10 +696,6 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -721,11 +717,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-darkPurple {
-  --tw-text-opacity: 1;
-  color: hsl(258 76% 13% / var(--tw-text-opacity));
 }
 
 .text-smokeDarkBlue {
@@ -880,12 +871,20 @@ body {
     display: none;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:content-center {
+    align-content: center;
   }
 
   .md\:justify-start {
