@@ -1,6 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    background-image: url('../images/landing-bg.svg');
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    top: 0;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+
+/*Nav animations
+--------------------------------------------------*/
+
+.animated-underline {
+    display: inline-block;
+    color: #ccff33 !important;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.animated-underline::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #ccff33;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated-underline:hover::after {
+    transform: scaleX(1);
+}
+
 
 /* Hamburger Menu */
 
