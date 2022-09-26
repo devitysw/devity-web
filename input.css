@@ -30,16 +30,11 @@
 }
 
 #hero {
-    background-image: url('../images/landing-bg.svg');
+    background-image: linear-gradient(to bottom, #17083a, #291751, #3d276a, #523684, #67479e, #784eaa, #8a56b5, #9c5dc0, #ac5dbd, #bb5cba, #c95cb6, #d65db1);
     background-size: cover;
-    background-position: top center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-}
-
-.transparent {
-    background-color: transparent !important;
 }
 
 
@@ -84,7 +79,7 @@
     left: 0;
     width: 24px;
     height: 3px;
-    background: hsl(258, 76%, 13%);
+    background: white;
     transform: rotate(0);
     transition: all 0.5s;
     border-radius: 5px;
