@@ -111,19 +111,24 @@
 }
 
 
+/* fade in*/
+
+.faded {
+    display: none;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+
 /* blobs */
 
-#laptop-blob,
-#imac-blob {
+.blob1 {
+    background-image: url("../images/blob1.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-#laptop-blob {
-    background-image: url("../images/blob1.svg");
-}
-
-#imac-blob {
-    background-image: url("../images/blob2.svg");
 }
