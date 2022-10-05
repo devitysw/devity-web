@@ -114,11 +114,12 @@
 /* fade in*/
 
 .faded {
-    display: none;
+    visibility: hidden;
     opacity: 0;
 }
 
 .fade-in {
+    visibility: visible;
     opacity: 1;
     transition: 0.5s ease-in-out;
 }

@@ -1,15 +1,15 @@
 var deviceIndex = 0;
-var deviceChanging = window.setInterval(function() {
-    var devices = document.getElementsByClassName("devices");
-    $.each(devices, function(indexInArray, valueOfElement) {
-        if (!$(devices[indexInArray]).hasClass("faded")) {
-            $(devices[indexInArray]).addClass("faded");
-        }
-    });
+var devices = document.getElementsByClassName("devices");
 
-    $(devices[deviceIndex]).removeClass("faded");
+$(document).ready(function() {
+    $(devices[1]).fadeOut();
+    $(devices[2]).fadeOut();
+})
+
+var deviceChanging = window.setInterval(function() {
+    var org = deviceIndex
     deviceIndex++;
-    if (deviceIndex > 2) {
-        deviceIndex = 0;
-    }
+    deviceIndex = deviceIndex % 3;
+    $(devices[org]).fadeOut();
+    $(devices[deviceIndex]).delay(350).fadeIn();
 }, 2000);

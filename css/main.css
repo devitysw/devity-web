@@ -641,6 +641,10 @@ video {
   height: 100%;
 }
 
+.h-\[550px\] {
+  height: 550px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -729,10 +733,6 @@ video {
 
 .p-10 {
   padding: 2.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-6 {
@@ -912,11 +912,12 @@ video {
 /* fade in*/
 
 .faded {
-  display: none;
+  visibility: hidden;
   opacity: 0;
 }
 
 .fade-in {
+  visibility: visible;
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
