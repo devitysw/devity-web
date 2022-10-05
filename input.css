@@ -30,7 +30,7 @@
 }
 
 #hero {
-    background-image: linear-gradient(to bottom, #17083a, #291751, #3d276a, #523684, #67479e, #784eaa, #8a56b5, #9c5dc0, #ac5dbd, #bb5cba, #c95cb6, #d65db1);
+    background-image: linear-gradient(to bottom, #17083a, #410e51, #6f0e63, #9f066d, #cf056f);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -108,4 +108,22 @@
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+/* blobs */
+
+#laptop-blob,
+#imac-blob {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#laptop-blob {
+    background-image: url("../images/blob1.svg");
+}
+
+#imac-blob {
+    background-image: url("../images/blob2.svg");
 }

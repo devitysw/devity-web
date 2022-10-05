@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="110.361mm"
+   height="61.688mm"
+   viewBox="0 0 110.361 61.688"
+   version="1.1"
+   id="svg993"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="imac.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview995"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="483.19867"
+     inkscape:cy="245.8927"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs990">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8809">
+      <rect
+         style="opacity:1;fill:#d54d4d;fill-opacity:0.342916;stroke:none;stroke-width:9"
+         id="rect8811"
+         width="40.570225"
+         height="13.178424"
+         x="346.27698"
+         y="332.30838" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4672">
+      <rect
+         style="fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:9.66438"
+         id="rect4674"
+         width="106.66933"
+         height="75.068718"
+         x="318.21408"
+         y="245.49126"
+         ry="4.8297887"
+         clip-path="url(#clipPath1713-3)"
+         transform="matrix(1.1720569,0,0,7.9009131,-60.753665,-2223.334)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1713">
+      <rect
+         style="opacity:1;fill:#522c80;fill-opacity:1;stroke-width:12.0311"
+         id="rect1715"
+         width="127.9204"
+         height="68.800491"
+         x="306.12778"
+         y="310.24179"
+         ry="8.6308889" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-60.066365,-84.194987)">
+    <g
+       id="g19301"
+       transform="matrix(0.71050148,0,0,0.71050148,-148.17207,-89.67229)"
+       style="display:inline">
+      <path
+         id="rect6553"
+         style="fill:#bbbbbb;stroke-width:9"
+         d="m 357.12891,334.19922 c -0.2602,8.09885 -1.69089,9.75729 -6.63477,11.51367 16.20662,0.0926 11.01161,-0.0923 16.41797,0.0781 v 0.0195 c 0.17839,-0.006 0.16741,-0.005 0.32812,-0.01 0.16175,0.005 0.15065,0.004 0.33008,0.01 v -0.0195 c 5.32818,-0.16986 0.21022,0.0144 16.22266,-0.0781 -4.88769,-1.75638 -6.30136,-3.41482 -6.55859,-11.51367 h -9.56641 -0.85352 z"
+         clip-path="url(#clipPath8809)"
+         transform="matrix(1.1934016,0,0,1.0691567,-66.32248,-37.845701)" />
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:9.66438"
+         id="rect859"
+         width="106.66933"
+         height="75.068718"
+         x="318.40921"
+         y="244.71065"
+         ry="4.8297887"
+         clip-path="url(#clipPath4672)" />
+      <rect
+         style="fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:9.66438"
+         id="rect859-4"
+         width="106.66933"
+         height="75.068718"
+         x="318.21408"
+         y="245.49126"
+         ry="4.8297887"
+         clip-path="url(#clipPath1713)"
+         transform="translate(0.19512939,-0.78060913)" />
+      <rect
+         style="opacity:1;fill:#e9e9e9;fill-opacity:1;stroke-width:9"
+         id="rect4540"
+         width="98.064354"
+         height="55.228279"
+         x="322.39264"
+         y="250.18607"
+         ry="0" />
+    </g>
+  </g>
+</svg>
