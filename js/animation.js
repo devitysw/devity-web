@@ -11,5 +11,5 @@ var deviceChanging = window.setInterval(function() {
     deviceIndex++;
     deviceIndex = deviceIndex % 3;
     $(devices[org]).fadeOut();
-    $(devices[deviceIndex]).delay(350).fadeIn();
+    $(devices[deviceIndex]).delay(400).fadeIn();
 }, 2000);
