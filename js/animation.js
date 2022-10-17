@@ -7,9 +7,12 @@ $(document).ready(function() {
 })
 
 var deviceChanging = window.setInterval(function() {
-    var org = deviceIndex
-    deviceIndex++;
-    deviceIndex = deviceIndex % 3;
-    $(devices[org]).fadeOut();
-    $(devices[deviceIndex]).delay(400).fadeIn();
+    if ($(devices[deviceIndex]).position().top > $(document).scrollTop() + $("#navbar").height()) {
+        console.log($(devices[deviceIndex]).position().top);
+        var org = deviceIndex
+        deviceIndex++;
+        deviceIndex = deviceIndex % 3;
+        $(devices[org]).fadeOut();
+        $(devices[deviceIndex]).delay(400).fadeIn();
+    }
 }, 2000);
