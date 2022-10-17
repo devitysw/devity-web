@@ -983,6 +983,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[550px\] {
+    height: 550px;
+  }
+
   .md\:min-h-\[550px\] {
     min-height: 550px;
   }
