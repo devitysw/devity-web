@@ -15,3 +15,18 @@ var deviceChanging = window.setInterval(function() {
         $(devices[deviceIndex]).delay(400).fadeIn();
     }
 }, 2000);
+
+var firstBlob = true;
+var animatedBlobsBg = window.setInterval(function() {
+    if ($("#animatedBlob").position().top > $(document).scrollTop() + $("#navbar").height()) {
+        if (firstBlob) {
+            $("#animatedBlob").removeClass("blob2");
+            $("#animatedBlob").addClass("blob3");
+            firstBlob = false;
+        } else {
+            $("#animatedBlob").removeClass("blob3");
+            $("#animatedBlob").addClass("blob2");
+            firstBlob = true;
+        }
+    }
+}, 2000);
