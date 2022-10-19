@@ -17,15 +17,29 @@ var deviceChanging = window.setInterval(function() {
 }, 2000);
 
 var firstBlob = true;
+$("#animatedBlob").css({
+    "background": "url('../images/blob2.svg')",
+    "background-repeat": "no-repeat",
+    "background-position": "center",
+    "background-size": "contain",
+});
 var animatedBlobsBg = window.setInterval(function() {
     if ($("#animatedBlob").position().top > $(document).scrollTop() + $("#navbar").height()) {
         if (firstBlob) {
-            $("#animatedBlob").removeClass("blob2");
-            $("#animatedBlob").addClass("blob3");
+            $("#animatedBlob").css({
+                "background": "url('../images/blob3.svg')",
+                "background-repeat": "no-repeat",
+                "background-position": "center",
+                "background-size": "contain",
+            });
             firstBlob = false;
         } else {
-            $("#animatedBlob").removeClass("blob3");
-            $("#animatedBlob").addClass("blob2");
+            $("#animatedBlob").css({
+                "background": "url('../images/blob2.svg')",
+                "background-repeat": "no-repeat",
+                "background-position": "center",
+                "background-size": "contain",
+            });
             firstBlob = true;
         }
     }
