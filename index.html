@@ -8,105 +8,115 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Devity software</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/d.png" id="tabFavicon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="z-50">
         <div class="fixed w-full pt-5 pb-5" id="navbar">
-            <div class="relative container mx-auto">
-                <div class="flex items-center justify-between">
-                    <!-- Logo -->
-                    <div class="pt-2">
-                        <img src="images/logo-white.png" alt="company logo" class="w-24" />
-                    </div>
-                    <!-- Menu Items -->
-                    <div class="hidden space-x-6 md:flex">
-                        <a href="#" class="text-white animated-underline">
-                            <span class="link link-underline link-underline-black">Pricing</span>
-                        </a>
-                        <a href="#" class="text-white animated-underline">
-                            <span class="link link-underline link-underline-black">Product</span>
-                        </a>
-                        <a href="#" class="text-white animated-underline">
-                            <span class="link link-underline link-underline-black">About Us</span>
-                        </a>
-                        <a href="#" class="text-white animated-underline">
-                            <span class="link link-underline link-underline-black">Careers</span>
-                        </a>
-                        <a href="#" class="text-white animated-underline">
-                            <span class="link link-underline link-underline-black">Community</span>
-                        </a>
-                    </div>
-
-                    <!-- Hamburger Icon -->
-                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                        <span class="hamburger-top"></span>
-                        <span class="hamburger-middle"></span>
-                        <span class="hamburger-bottom"></span>
-                    </button>
+            <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
+                <!-- Logo -->
+                <div class="pt-2 self-center">
+                    <img src="images/logo-white.png" alt="company logo" class="w-24" />
                 </div>
+                <!-- Menu Items -->
+                <div class="hidden space-x-6 self-center text-white text-sm font-light md:flex">
+                    <a href="#" class="animated-underline">
+                        <span class="link link-underline link-underline-black">SLUŽBY</span>
+                    </a>
+                    <a href="#" class="animated-underline">
+                        <span class="link link-underline link-underline-black">O NÁS</span>
+                    </a>
+                    <a href="#" class="animated-underline">
+                        <span class="link link-underline link-underline-black">CENNÍK</span>
+                    </a>
+                    <a href="#" class="animated-underline">
+                        <span class="link link-underline link-underline-black">KONTAKT</span>
+                    </a>
+                </div>
+
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger self-center md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
         <div class="md:hidden">
             <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
+                <a href="#">SLUŽBY</a>
+                <a href="#">O NÁS</a>
+                <a href="#">CENNÍK</a>
                 <a href="#">Careers</a>
-                <a href="#">Community</a>
+                <a href="#">KONTAKT</a>
             </div>
         </div>
     </nav>
 
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="max-w-6xl mx-auto h-full">
+    <section id="hero" class="full-screen bg-black text-white z-40">
+        <div class="max-w-[90%] mx-auto h-full">
             <div class="flex flex-col-reverse md:flex-row md:justify-between md:items-stretch md:h-full">
-                <div class="md:self-stretch md:grid md:content-center">
-                    <h1 class="max-w-md text-4xl font-bold text-center text-white md:text-5xl md:text-left">
-                        Bring everyone together to build better products
-                    </h1>
-                    <p class="max-w-sm text-center text-white md:text-left md:pt-3">
-                        Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-                    </p>
-                    <div class="flex justify-center md:justify-start md:pt-16">
-                        <a href="#" class="p-3 px-6 pt-2 text-white bg-darkPurple rounded-full baseline hover:bg-lightPurple">Get Started</a>
+                <div class="md:self-stretch md:flex md:flex-col md:justify-center md:space-y-28">
+                    <div class="w-full text-4xl font-extrabold text-center tracking-wider text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-raspberry md:text-8xl md:text-left md:w-2/3">
+                        WEBOVÉ APLIKÁCIE
                     </div>
                 </div>
-                <div class="bg-white md:self-stretch md:grid md:content-center">
+                <div class="md:self-stretch md:grid md:content-center">
                     a
                 </div>
             </div>
         </div>
     </section>
 
-    <img src="images/landing-wave.svg" class="md:w-full -my-1 z-0">
-
-    <section id="" class="text-2xl max-w-6xl mx-auto pt-10 pl-8 pr-8">
-        <div class="flex flex-col-reverse md:flex-row md:justify-between md:items-stretch md:h-full md:min-h-[550px]">
-            <div class="md:self-stretch md:grid md:content-center">
-                <h1 class="max-w-md text-4xl font-bold text-center text-darkPurple md:text-5xl md:text-left">
-                    Webové aplikácie podľa vašich predstáv
-                </h1>
-                <p class="max-w-sm text-center text-darkPurple md:text-left md:pt-10">
-                    Či už chcete portál na interné účely alebo komplexnú aplikáciu aj pre zákazníkov... tu dačo domyslíme
-                </p>
+    <section id="services" class=" z-40">
+        <div class="w-[90%] mx-auto mt-20">
+            <div class="w-max mx-auto text-center text-5xl font-extrabold tracking-wider">
+                <span class="px-6">SOFTVÉROVÉ RIEŠENIA NA MIERU</span> <br>
+                <hr class="mt-4 border-2 rounded-md border-purple-500">
             </div>
-            <div class="blob1 p-5 flex justify-center md:h-[550px] md:self-stretch md:grid md:content-center">
-                <span></span>
-                <div class="devices">
-                    <img src="/images/macbook.svg" alt="laptop" class="p-10">
+
+            <div class="flex flex-row justify-around mt-14 mx-auto w-[90%]">
+                <div class="p-5 text-darkPurple rounded-2xl w-[30%]">
+                    <img src="images/macbook.svg" alt="mackbook" class="w-1/2 mx-auto">
+                    <h1 class="max-w-md text-3xl font-bold text-center pt-7 text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-raspberry">
+                        WEBOVÁ APLIKÁCIA
+                    </h1>
+                    <p class="w-full text-center pt-3 text-sm">
+                        Či už potrebujete portál na interné účely alebo komplexnú aplikáciu aj pre zákazníkov, my Vám pomôžeme premeniť vízie na realitu.
+                    </p>
                 </div>
-                <div class="devices">
-                    <img src="/images/mobile.svg" alt="mobile" class="p-10">
+
+                <div class="p-5 text-darkPurple rounded-2xl w-[30%]">
+                    <img src="images/macbook.svg" alt="mackbook" class="w-1/2 mx-auto">
+                    <h1 class="max-w-md text-3xl font-bold text-center pt-7 text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-raspberry">
+                        E-SHOP
+                    </h1>
+                    <p class="w-full text-center pt-3 text-sm">
+                        Pomôžeme rozbehnúť Váš biznis, aby o ňom vedelo čo najviac ľudí.
+                    </p>
                 </div>
-                <div class="devices">
-                    <img src="/images/imac.svg" alt="imac" class="p-10">
+
+                <div class="p-5 text-darkPurple rounded-2xl w-[30%]">
+                    <img src="images/macbook.svg" alt="mackbook" class="w-1/2 mx-auto">
+                    <h1 class="max-w-md text-3xl font-bold text-center pt-7 text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-raspberry">
+                        WEBOVÁ STRÁNKA
+                    </h1>
+                    <p class="w-full text-center pt-3 text-sm">
+                        Vytvoríme jednoduchú úvodnú stránku Vášmu produktu.
+                    </p>
                 </div>
+            </div>
+
+            <div class="w-full text-center mt-10">
+                Nie ste si istí, ktorý typ je pre Vás najlepší, prípadne máte otázky? Neváhajte nás <a href="#contact" class="text-lightPurple underline">kontaktovať</a>, a my Vám radi pomôžeme.
             </div>
         </div>
     </section>
