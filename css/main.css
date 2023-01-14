@@ -579,12 +579,16 @@ video {
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-40 {
   z-index: 40;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .-m-4 {
@@ -911,6 +915,11 @@ video {
   background-color: hsl(258 76% 10% / var(--tw-bg-opacity));
 }
 
+.bg-pink {
+  --tw-bg-opacity: 1;
+  background-color: hsl(302 42% 55% / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1197,6 +1206,10 @@ html {
 .full-screen {
   width: 100%;
   height: 100vh;
+}
+
+.z-full {
+  z-index: 999;
 }
 
 /*Nav animations
