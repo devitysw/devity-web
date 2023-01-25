@@ -583,6 +583,22 @@ video {
   left: auto;
 }
 
+.-top-4 {
+  top: -1rem;
+}
+
+.-right-6 {
+  right: -1.5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.-top-6 {
+  top: -1.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
