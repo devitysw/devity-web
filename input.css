@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 body,
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -37,11 +36,13 @@ html {
 .logo {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
-  }
-  .logo:hover {
+}
+
+.logo:hover {
     -webkit-filter: grayscale(0);
     filter: none;
-  }
+}
+
 
 /*Nav animations
 --------------------------------------------------*/
