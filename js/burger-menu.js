@@ -5,7 +5,7 @@ function toggleMobileMenu() {
     btn.classList.toggle('open')
     nav.classList.toggle('hidden')
 
-    var x = 2 * $('#navbar').height();
+    var x = 1.5 * $('#navbar').height();
     $('#menu').css({ 'top': x + 'px' });
 }
 
@@ -15,10 +15,10 @@ btn.addEventListener('click', () => {
 
 function scrollToSection(section) {
     $('html').animate({
-        scrollTop: $(section).offset().top - 2 * ($("#navbar").height())
+        scrollTop: $(section).offset().top - 1.9 * ($("#navbar").height())
     }, 100);
 
-    if (!$('#mobile').hasClass('block')) {
+    if (!$('#menu').hasClass('hidden')) {
         toggleMobileMenu();
     }
 };
