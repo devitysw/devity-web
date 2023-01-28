@@ -70,7 +70,6 @@ html {
 .animated-underline {
     display: inline-block;
     text-decoration: none;
-    color: white;
 }
 
 .animated-underline::after {
