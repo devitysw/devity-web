@@ -35,8 +35,8 @@ html {
     @apply text-transparent;
     @apply bg-clip-text;
     @apply bg-gradient-to-br;
-    @apply from-purple-500;
-    @apply to-raspberry;
+    @apply from-purple-700;
+    @apply to-violet-400;
 }
 
 .bottom-decor-black {
@@ -76,7 +76,7 @@ html {
 .animated-underline::after {
     display: block;
     content: '';
-    @apply border-b-2 border-pink;
+    @apply border-b-2 border-purple-400;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
