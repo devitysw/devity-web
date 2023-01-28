@@ -901,6 +901,11 @@ video {
   background-color: hsl(272 98% 38% / var(--tw-bg-opacity));
 }
 
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+}
+
 .fill-purple-500 {
   fill: #a855f7;
 }
