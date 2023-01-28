@@ -28,6 +28,17 @@ html {
     }
 }
 
+.gradient-title {
+    @apply text-center;
+    @apply font-extrabold;
+    @apply tracking-wider;
+    @apply text-transparent;
+    @apply bg-clip-text;
+    @apply bg-gradient-to-br;
+    @apply from-purple-500;
+    @apply to-raspberry;
+}
+
 .full-screen {
     width: 100%;
     height: 100vh;
