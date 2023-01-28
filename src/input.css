@@ -11,7 +11,7 @@ html {
     /* Firefox */
     * {
         scrollbar-width: thin;
-        scrollbar-color: #ff146a transparent;
+        scrollbar-color: #510297 transparent;
     }
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
@@ -22,7 +22,7 @@ html {
         border-radius: 5px;
     }
     *::-webkit-scrollbar-thumb {
-        background-color: #ff146a;
+        background-color: #510297;
         border-radius: 14px;
         border: 3px solid transparent;
     }
@@ -37,6 +37,15 @@ html {
     @apply bg-gradient-to-br;
     @apply from-purple-500;
     @apply to-raspberry;
+}
+
+.bottom-decor-black {
+    @apply w-full;
+    @apply h-6;
+    background-image: url('/images/bottom-decor-black.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 .full-screen {
