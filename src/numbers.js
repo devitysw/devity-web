@@ -23,11 +23,14 @@ function isScrolledIntoView(elem)
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+var animatedNumbers = false;
+
 $(window).on("scroll touchmove", function() {
-    if (isScrolledIntoView('#about')) {
+    if (isScrolledIntoView('#about') && !animatedNumbers) {
         incEltNbr("num0", 13, 10);
         incEltNbr("num1", 25, 10);
         incEltNbr("num2", 3, 10);
         incEltNbr("num3", 100, 1);
+        animatedNumbers = true;
     }
 })
