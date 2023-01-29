@@ -21,37 +21,17 @@
             <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
                 <!-- Logo -->
                 <div class="pt-2 self-center">
-                    <button onclick="scrollToSection('#hero')" class="outline-none p-0 w-24">
-                        <img src="images/logo-white.png" alt="company logo" class="w-full" />
-                    </button>
+                    <a href="index.html" class="self-center">
+                        <img src="images/logo-white.png" alt="company logo" class="w-24" />
+                    </a>
                 </div>
                 <!-- Menu Items -->
                 <div class="hidden space-x-6 self-center text-white text-sm font-light md:flex">
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
-                            SLUŽBY
-                        </button>
-                    </div>
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#about')" class="border-0 bg-transparent">
-                            O NÁS
-                        </button>
-                    </div>
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#projects')" class="border-0 bg-transparent">
-                            PROJEKTY
-                        </button>
-                    </div>
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#pricing')" class="border-0 bg-transparent">
-                            CENNÍK
-                        </button>
-                    </div>
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#footer')" class="border-0 bg-transparent">
-                            KONTAKT
-                        </button>
-                    </div>
+                    <a href="index.html#services" class="animated-underline self-center">SLUŽBY</a>
+                    <a href="index.html#about" class="animated-underline self-center">O NÁS</a>
+                    <a href="index.html#projects" class="animated-underline self-center">PROJEKTY</a>
+                    <a href="index.html#pricing" class="animated-underline self-center">CENNÍK</a>
+                    <a href="" class="animated-underline self-center">KONTAKT</a>
                 </div>
 
                 <!-- Hamburger Icon -->
@@ -65,22 +45,22 @@
     </nav>
 
     <div id="menu" class="full-screen hidden z-40 fixed backdrop-blur-sm">
-        <div class="bg-black text-gray-300 font-semibold tracking-widest">
+        <div class="bg-black text-gray-300 font-semibold">
             <div class="flex flex-col max-w-[90%] mx-auto">
-                <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">SLUŽBY</button>
+                <a href="index.html#services" class="animated-underline self-center w-full text-right px-2 py-4">SLUŽBY</a>
                 <hr class="w-full border-0 border-b border-gray-300">
-                <button onclick="scrollToSection('#about')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">O NÁS</button>
+                <a href="index.html#about" class="animated-underline self-center w-full text-right px-2 py-4">O NÁS</a>
                 <hr class="w-full border-0 border-b border-gray-300">
-                <button onclick="scrollToSection('#projects')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">PROJKETY</button>
+                <a href="index.html#projects" class="animated-underline self-center w-full text-right px-2 py-4">PROJEKTY</a>
                 <hr class="w-full border-0 border-b border-gray-300">
-                <button onclick="scrollToSection('#pricing')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">CENNÍK</button>
+                <a href="index.html#pricing" class="animated-underline self-center w-full text-right px-2 py-4">CENNÍK</a>
                 <hr class="w-full border-0 border-b border-gray-300">
-                <button onclick="scrollToSection('#footer')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">KONTAKT</button>
+                <a href="" class="animated-underline self-center w-full text-right px-2 py-4">KONTAKT</a>
             </div>
         </div>
     </div>
 
-    <section id="contact-info" class=" z-0">
+    <section id="contact-info" class="z-0 min-h-[95vh]">
         
         <div class="max-w-[90%] w-[90%] mx-auto py-5">
             <div class="max-w-[95%] mx-auto xs:w-max xs:mx-auto text-center font-extrabold tracking-wider ">
@@ -88,11 +68,50 @@
                 <hr class="mt-4 border-0 border-b-[3px] rounded-md border-purple-500 ">
             </div>
 
+            <div class="flex flex-col m:flex-row justify-around mt-10">
+                <div class="flex flex-col space-y-4 m:w-1/3">
+                    <h3 class="text-2xl font-bold tracking-wide text-purple-500">NEVÁHAJTE NÁS KONTAKTOVAŤ</h3>
+                    <div class="flex flex-col">
+                        <div class="flex items-stretch font-bold">
+                            <h2 class="text-2xl self-center h-8 w-8 text-center"><i class="fa-regular fa-clock"></i></h2>
+                            <h3 class="font-semibold self-center">Pracovné dni:&nbsp;&nbsp;&nbsp;9:00 - 17:00</h3>
+                        </div>
+                        <div class="ml-8 w-1/2 text-center text-xs text-zinc-600 ">
+                            Víkendy a sviatky, prípadne mimo pracovej doby podľa dohody.
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-stretch">
+                        <h2 class="text-2xl self-center h-8 w-8 text-center"><i class="fa-regular fa-envelope"></i></h2>
+                        <h3 class="font-semibold self-center">info@devity.sk</h3>
+                    </div>
+                    <h3 class="text-2xl pt-4 font-bold tracking-wide text-purple-500">SOCIÁLNE SIETE</h3>
+                    <div class="flex flex-row items-stretch">
+                        <h2 class="text-2xl self-center h-8 w-8 text-center"><i class="fa-brands fa-instagram"></i></h2>
+                        <h3 class="font-semibold self-center">devity_sk</h3>
+                    </div>
+                    <div class="flex flex-row items-stretch">
+                        <h2 class="text-2xl self-center h-8 w-8 text-center"><i class="fa-brands fa-linkedin-in"></i></h2>
+                        <h3 class="font-semibold self-center">devity_sk</h3>
+                    </div>
+                </div>
+                
+                
+                <div class="flex flex-col space-y-4 m:w-1/3">
+                    <h3 class="text-2xl font-bold tracking-wide text-purple-500">FAKTURAČNÉ ÚDAJE</h3>
+                    <div class=" text-zinc-600 ">
+                        <span class="text-zinc-700 font-semibold">DEVITY Software s. r. o.</span><br>
+                        <span class="text-zinc-700 font-semibold">Sídlo:</span>&nbsp;Trieda KVP 1 040 23 Košice <br>
+                        <span class="text-zinc-700 font-semibold">IČO:</span>&nbsp;54297231 <br>
+                        <span class="text-zinc-700 font-semibold">DIČ:</span>&nbsp;2121632381 <br>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         
     </section>
     
-    <div class="absolute bottom-0 w-full">
+    <div class="w-full">
         <div class="-mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
                 <path class="fill-purple-500" style="opacity:0.5" d="M0 60 L2600 0 L2600 129.1 0 60z"></path>
@@ -114,21 +133,9 @@
                     <a href=" " class="hover:text-purple-400 "><i class="fa-brands fa-instagram "></i></a>
                     <a href=" " class="hover:text-purple-400 "><i class="fa-brands fa-square-facebook "></i></a>
                 </div>
-                <div class="self-center animated-underline">
-                    <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
-                        KONTAKT
-                    </button>
-                </div>
-                <div class="self-center animated-underline">
-                    <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
-                        SLUŽBY
-                    </button>
-                </div>
-                <div class="self-center animated-underline">
-                    <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
-                        AKO TO FUNGUJE
-                    </button>
-                </div>
+                <a href="contact.html" class="animated-underline self-center">KONTAKT</a>
+                <a href="services.html" class="animated-underline self-center">SLUŽBY</a>
+                <a href="how.html" class="animated-underline self-center">AKO TO FUNGUJE</a>
             </div>
             <h6 class="w-full text-center text-[0.6rem] py-2"><i class="fa-regular fa-copyright"></i>&nbsp;2023</h6>
         </footer>
