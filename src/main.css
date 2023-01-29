@@ -580,6 +580,11 @@ video {
   margin-right: auto;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -884,6 +889,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.whitespace-normal {
+  white-space: normal;
 }
 
 .rounded-full {
@@ -1481,6 +1490,11 @@ html {
     margin-right: auto;
   }
 
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1503,6 +1517,14 @@ html {
 
   .sm\:w-\[18\%\] {
     width: 18%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-\[40\%\] {
+    width: 40%;
   }
 
   .sm\:flex-row {
@@ -1538,11 +1560,29 @@ html {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 590px) {
+  .s\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .s\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .s\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .s\:block {
+    display: block;
   }
 
   .s\:w-2\/3 {
@@ -1553,8 +1593,54 @@ html {
     width: 25%;
   }
 
+  .s\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .s\:w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .s\:w-3\/4 {
+    width: 75%;
+  }
+
   .s\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .s\:flex-row {
+    flex-direction: row;
+  }
+
+  .s\:flex-col {
+    flex-direction: column;
+  }
+
+  .s\:items-stretch {
+    align-items: stretch;
+  }
+
+  .s\:justify-center {
+    justify-content: center;
+  }
+
+  .s\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .s\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .s\:self-center {
+    align-self: center;
   }
 
   .s\:py-20 {
@@ -1579,6 +1665,16 @@ html {
   .s\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .s\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .s\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1655,6 +1751,11 @@ html {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1758,6 +1859,11 @@ html {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
