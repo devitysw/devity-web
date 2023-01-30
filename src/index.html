@@ -105,41 +105,25 @@
                 <div class="px-6 block sm:hidden text-xs xxs:text-lg xs:text-2xl ">SOFTVÉROVÉ RIEŠENIA <br> NA MIERU</div>
                 <hr class="mt-4 border-0 border-b-[3px] rounded-md border-purple-500 ">
             </div>
-
-            <div class="flex flex-col lg:flex-row lg:justify-around mt-14 max-w-full sm:mx-auto s:w-2/3 lg:w-[90%] ">
-                <div class="lg:p-5 text-darkPurple rounded-2xl w-full lg:w-[30%] ">
-                    <img src="images/macbook.svg " alt="mackbook " class="w-[90%] lg:w-3/4 mx-auto ">
-                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
-                        WEBOVÁ APLIKÁCIA
-                    </h1>
-                    <p class="w-full text-center pt-3 text-xs s:text-sm ">
-                        Či už potrebujete portál na interné účely alebo komplexnú aplikáciu aj pre zákazníkov, my Vám pomôžeme premeniť vízie na realitu.
-                    </p>
+            
+            <div class="flex flex-row justify-around mt-20">
+                <div class="w-1/3">
+                    <img id="webApp" src="images/ilustracia-webapp.svg" alt="web app" class="w-full">
+                    <img id="eshop" src="images/ilustracia-eshop.svg" alt="web app" class="w-full hidden">
+                    <div class="flex flex-row justify-center space-x-4 mt-4 font-extrabold">
+                        <button id="webAppBtn" onclick="changeImage('#webApp', '#webAppBtn')" class="m-0 p-1 border-0 text-lightPurple"><i class="fa-solid fa-circle"></i></button>
+                        <button id="eshopBtn" onclick="changeImage('#eshop', '#eshopBtn')" class="m-0 p-1 border-0 text-purple-200"><i class="fa-solid fa-circle"></i></button>
+                    </div>
                 </div>
-
-                <div class="lg:p-5 text-darkPurple rounded-2xl w-full mt-14 lg:mt-0 lg:w-[30%] ">
-                    <img src="images/ilustracia-eshop.svg" alt="eshop illustration " class="w-[90%] mx-auto ">
-                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
-                        E-SHOP
-                    </h1>
-                    <p class="w-full text-center pt-3 text-xs s:text-sm ">
+                <div class="w-1/3 text-lg flex flex-col space-y-5">
+                    <div class="leading-9 text-zinc-600 tracking-wider">
+                        Či už potrebujete portál na interné účely alebo komplexnú aplikáciu aj pre zákazníkov, my Vám pomôžeme premeniť vízie na 
+                        realitu.
                         Pomôžeme rozbehnúť Váš biznis, aby o ňom vedelo čo najviac ľudí.
-                    </p>
-                </div>
-
-                <div class="lg:p-5 text-darkPurple rounded-2xl w-full mt-14 lg:mt-0 lg:w-[30%] ">
-                    <img src="images/macbook.svg " alt="mackbook " class="w-[90%] lg:w-3/4 mx-auto ">
-                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
-                        PORTFÓLIO
-                    </h1>
-                    <p class="w-full text-center pt-3 text-xs s:text-sm ">
                         Vytvoríme jednoduchú úvodnú stránku pre Váš produkt alebo Vašu prácu.
-                    </p>
+                    </div>
+                    <button class="px-6 py-3 w-max mx-auto bg-purple-500 text-white hover:bg-lightPurple rounded-full" >Chcem vedieť viac</button>
                 </div>
-            </div>
-
-            <div class="w-full text-xs sm:text-base text-center mt-10 text-zinc-600 ">
-                Nie ste si istí, ktorý typ je pre Vás najlepší, prípadne máte otázky? Neváhajte nás <a href="#contact " class="animated-underline text-lightPurple font-semibold">kontaktovať</a>, a my Vám radi pomôžeme.
             </div>
         </div>
         
@@ -153,30 +137,28 @@
     </section>
 
     <section id="about" class="bg-black text-white z-0 py-12">
-        <div class="max-w-[90%] mx-auto flex flex-col space-y-12 md:space-y-0 md:flex-row md:justify-around">
-            <div class="flex flex-col space-y-2">
-                <h1 class="text-5xl font-extrabold text-purple-500 text-center">
-                    <span id="num0"></span>
-                </h1>
-                <h6 class="text-center font-light">PROJEKTOV</h6>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <h1 class="text-5xl font-extrabold text-purple-500 text-center">
-                    <span id="num1"></span>&nbsp;k
-                </h1>
-                <h6 class="text-center font-light">HODÍN NA PROJEKTOCH</h6>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <h1 class="text-5xl font-extrabold text-purple-500 text-center">
-                    <span id="num2"></span>
-                </h1>
-                <h6 class="text-center font-light">VÄČŠIE APLIKÁCIE</h6>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <h1 class="text-5xl font-extrabold text-purple-500 text-center">
-                    <span id="num3"></span>&nbsp;%
-                </h1>
-                <h6 class="text-center font-light">SPOKOJNÝCH ZÁKAZNÍKOV</h6>
+        <div class="max-w-[90%] w-[90%] mx-auto">
+            <div class="flex flex-col lg:flex-row lg:justify-around mt-14 max-w-full sm:mx-auto s:w-2/3 lg:w-[90%] ">
+                <div class="lg:p-5 text-darkPurple rounded-2xl w-full lg:w-[30%] ">
+                    <img src="images/imac.svg " alt="mackbook " class="w-[90%] lg:w-3/4 mx-auto ">
+                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
+                        WEBOVÁ APLIKÁCIA
+                    </h1>
+                </div>
+
+                <div class="lg:p-5 text-darkPurple rounded-2xl w-full mt-14 lg:mt-0 lg:w-[30%] ">
+                    <img src="images/imac.svg" alt="eshop illustration " class="w-[90%] lg:w-3/4 mx-auto ">
+                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
+                        E-SHOP
+                    </h1>
+                </div>
+
+                <div class="lg:p-5 text-darkPurple rounded-2xl w-full mt-14 lg:mt-0 lg:w-[30%] ">
+                    <img src="images/imac.svg " alt="mackbook " class="w-[90%] lg:w-3/4 mx-auto ">
+                    <h1 class="text-lg xxs:text-xl xs:text-2xl text-center pt-7 gradient-title font-bold">
+                        PORTFÓLIO
+                    </h1>
+                </div>
             </div>
         </div>
     </section>
@@ -275,7 +257,7 @@
         </div>
     </section>
 
-    <section id="pricing" class=" z-0">
+    <section id="contact-us" class=" z-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
             <path class="fill-purple-500" style="opacity:0.75" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
             <path class="fill-purple-500" style="opacity:0.5" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
@@ -283,109 +265,14 @@
         </svg>
         
         <div class="max-w-[90%] w-[90%] mx-auto pb-5 pt-5 xs:pt-10 s:pt-20 ">
-            <div class="max-w-[95%] mx-auto xs:w-max xs:mx-auto text-center font-extrabold tracking-wider ">
-                <div class="px-6 text-4xl md:text-5xl ">CENNÍK</div>
-                <hr class="mt-4 border-0 border-b-[3px] rounded-md border-purple-500 ">
-            </div>
-
-            <div class="grid grid-cols-1 s:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 ">
-                <div class="w-full rounded-lg border-2 border-gray-300 p-6 text-xs xxs:text-sm ">
-                    <h2 class="text-sm tracking-widest ">KONZULTÁCIA</h2>
-                    <div class="flex flex-row space-x-3 mt-2 ">
-                        <h1 class="text-2xl xxs:text-4xl font-medium ">ZDARMA</h1>
-                    </div>
-                    <hr class="w-full border-0 border-b border-gray-300 pt-4 ">
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Prvotný rozhovor</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Jednoduchý návrh aplikácie</p>
-                    </div>
+            <div class="flex flex-row justify-center items-stretch">
+                <div class="w-1/3 self-center">
+                    <img src="images/profilFoto.jpg" alt="katka" class="w-[40%] mx-auto rounded-full">
                 </div>
-
-                <div class="w-full rounded-lg border-2 border-gray-300 p-6 text-xs xxs:text-sm ">
-                    <h2 class="text-sm tracking-widest ">PORTFÓLIO / E-SHOP</h2>
-                    <div class="flex flex-row space-x-3 mt-2 ">
-                        <h6 class="text-gray-500 text-xs xxs:text-base ">OD</h2>
-                            <h1 class="text-2xl xxs:text-4xl font-medium ">100€</h1>
-                    </div>
-                    <hr class="w-full border-0 border-b border-gray-300 pt-4 ">
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Konzultácie počas projektu</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Dizajnový návrh produktu</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Realizácia produktu</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Malé úpravy prvé 2 mesiace od odovzdania produktu</p>
-                    </div>
+                <div class="self-center text-3xl tracking-wide">
+                    <span class="text-lightPurple font-bold">MÁTE NÁPAD, KTORÝ BY STE CHCELI ZREALIZOVAŤ?</span> <br>
+                    Napíšte nám na info@devity.sk
                 </div>
-
-                <div class="w-full rounded-lg border-2 border-lightPurple flex flex-col text-xs xxs:text-sm ">
-                    <span class="bg-lightPurple text-white relative px-3 py-1 h-6 w-min tracking-widest text-xs rounded-bl rounded-tr self-end ">POPULAR</span>
-                    <div class="px-6 pb-6 ">
-                        <h2 class="text-sm tracking-widest ">WEBOVÁ APLIKÁCIA</h2>
-                        <div class="flex flex-row space-x-3 mt-2 ">
-                            <h6 class="text-gray-500 text-xs xxs:text-base ">OD</h2>
-                                <h1 class="text-2xl xxs:text-4xl font-medium ">2000€</h1>
-                        </div>
-                        <hr class="w-full border-0 border-b border-gray-300 pt-4 ">
-                        <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                            <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                            <p class="text-gray-500 ">Konzultácie počas projektu</p>
-                        </div>
-                        <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                            <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                            <p class="text-gray-500 ">Dizajnový návrh produktu</p>
-                        </div>
-                        <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                            <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                            <p class="text-gray-500 ">Realizácia produktu</p>
-                        </div>
-                        <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                            <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                            <p class="text-gray-500 ">Malé úpravy prvé 2 mesiace od odovzdania produktu</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full rounded-lg border-2 border-gray-300 p-6 text-xs xxs:text-sm ">
-                    <h2 class="tracking-widest ">INÉ</h2>
-                    <div class="flex flex-row space-x-3 mt-2 items-stretch ">
-                        <h1 class="text-2xl xxs:text-4xl font-medium ">20€</h1>
-                        <h6 class="text-gray-500 self-center text-xs xxs:text-base ">/ h</h2>
-                    </div>
-                    <hr class="w-full border-0 border-b border-gray-300 pt-4 ">
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Údržba</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Spravovanie</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Zmeny</p>
-                    </div>
-                    <div class="flex flex-row items-stretch mt-4 space-x-4 ">
-                        <div class="text-lightPurple self-center "><i class="fa-solid fa-check "></i></div>
-                        <p class="text-gray-500 ">Iné služby (po dohode)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full text-xs sm:text-base text-center mt-10 text-zinc-600 ">
-                Radi by ste sa dozvedeli viac informácií? Neváhajte nás <a href="contact.html" class="animated-underline text-lightPurple font-semibold">kontaktovať</a>, a my Vám radi pomôžeme.
             </div>
         </div>
         
@@ -421,7 +308,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="burger-menu.js"></script>
     <script src="tabicon.js"></script>
-    <script src="numbers.js"></script>
+    <script src="carousel.js"></script>
 </body>
 
 </html>
