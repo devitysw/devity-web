@@ -19,3 +19,12 @@ function changeImage(newImg, newBtn) {
     $(newBtn).addClass('text-lightPurple');
     $(newImg).removeClass('hidden');
 }
+
+var carouselImg = 0;
+window.setInterval(function(){
+    changeImage(images[carouselImg], btns[carouselImg]);
+    if (carouselImg == 0)
+        carouselImg = 1;
+    else
+        carouselImg = 0;
+}, 2000);
