@@ -1905,6 +1905,10 @@ html {
     width: 20%;
   }
 
+  .sm\:w-\[30\%\] {
+    width: 30%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -2003,6 +2007,10 @@ html {
 
   .s\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .s\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .s\:flex-row {
