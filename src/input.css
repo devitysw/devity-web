@@ -5,6 +5,7 @@ body,
 html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    @apply bg-bgColor;
 }
 
 @layer utilities {
@@ -29,14 +30,7 @@ html {
 }
 
 .gradient-title {
-    @apply text-center;
-    @apply font-extrabold;
-    @apply tracking-wider;
-    @apply text-transparent;
-    @apply bg-clip-text;
-    @apply bg-gradient-to-br;
-    @apply from-purple-700;
-    @apply to-violet-400;
+    @apply text-center font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-br from-[#7B29FF] to-[#933AFF];
 }
 
 .bottom-decor-black {
@@ -49,8 +43,8 @@ html {
 }
 
 .full-screen {
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
 .logo {
@@ -75,7 +69,7 @@ html {
 .animated-underline::after {
     display: block;
     content: '';
-    @apply border-b-2 border-purple-400;
+    @apply border-b-2 border-lightPurple;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
@@ -104,7 +98,7 @@ html {
     left: 0;
     width: 24px;
     height: 3px;
-    background: white;
+    background: #830FE9;
     transform: rotate(0);
     transition: all 0.5s;
     border-radius: 5px;
@@ -161,4 +155,13 @@ html {
 
 #animatedBlob {
     transition-duration: 1s;
+}
+
+.main-btn {
+    @apply rounded-full px-6 py-2 bg-gradient-to-br from-[#5D139D] to-[#A78BFA] text-white hover:from-darkPurple hover:to-lightPurple w-max mx-auto text-xs s:text-sm m:text-base;
+    transition: all ease-in 100ms;
+}
+
+.prod-card {
+    @apply rounded-2xl drop-shadow-md bg-white;
 }

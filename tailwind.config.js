@@ -17,8 +17,9 @@ module.exports = {
         extend: {
             colors: {
                 darkPurple: 'hsl(274, 66%, 15%)',
-                lightPurple: 'hsl(272, 98%, 38%)',
+                lightPurple: 'hsl(272, 88%, 49%)',
                 smokeDarkBlue: 'hsl(226, 39%, 31%)',
+                bgColor: 'hsl(280, 100%, 99%)',
                 pink: 'hsl(302, 42%, 55%)',
                 raspberry: 'hsl(338, 100%, 54%)'
             }

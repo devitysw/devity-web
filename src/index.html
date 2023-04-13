@@ -15,26 +15,35 @@
 </head>
 
 <body>
+    <!-- decor -->
+    <div id="decorBehindTitlePhoto" class="w-full m:w-[58%] top-20 m:top-0 right-0 z-0 absolute">
+        <img src="images/blob-title.svg" alt="blob decor" class="w-full">
+    </div>
+    
+    <div id="decorAbout" class="w-full s:w-2/3 m:w-[45%] top-[80vh] left-0 z-0 absolute">
+        <img src="images/blob-about.svg" alt="blob decor" class="w-full">
+    </div>   
+    
     <!-- Navbar -->
-    <nav class="z-50">
-        <div class="fixed w-full py-5 bg-black" id="navbar">
+    <nav class="z-50 relative">
+        <div class="fixed w-full py-3 bg-bgColor" id="navbar">
             <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
                 <!-- Logo -->
                 <div class="pt-2 self-center">
                     <button onclick="scrollToSection('#hero')" class="outline-none p-0 w-24">
-                        <img src="images/logo-white.png" alt="company logo" class="w-full" />
+                        <img src="images/logo.png" alt="company logo" class="w-full" />
                     </button>
                 </div>
                 <!-- Menu Items -->
-                <div class="hidden space-x-6 self-center text-white text-sm font-light md:flex">
-                    <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
-                            SLUŽBY
-                        </button>
-                    </div>
+                <div class="hidden space-x-6 self-center text-lightPurple font-medium text-sm md:flex">
                     <div class="self-center animated-underline">
                         <button onclick="scrollToSection('#about')" class="border-0 bg-transparent">
                             O NÁS
+                        </button>
+                    </div>
+                    <div class="self-center animated-underline">
+                        <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
+                            SLUŽBY
                         </button>
                     </div>
                     <div class="self-center animated-underline">
@@ -43,7 +52,7 @@
                         </button>
                     </div>
                     <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#footer')" class="border-0 bg-transparent">
+                        <button onclick="scrollToSection('#contact')" class="border-0 bg-transparent">
                             KONTAKT
                         </button>
                     </div>
@@ -60,20 +69,323 @@
     </nav>
 
     <div id="menu" class="full-screen hidden z-40 fixed backdrop-blur-sm">
-        <div class="bg-black text-gray-300 font-semibold tracking-widest">
+        <div class="bg-bgColor text-lightPurple font-semibold tracking-widest">
             <div class="flex flex-col max-w-[90%] mx-auto">
-                <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">SLUŽBY</button>
-                <hr class="w-full border-0 border-b border-gray-300">
                 <button onclick="scrollToSection('#about')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">O NÁS</button>
+                <hr class="w-full border-0 border-b border-gray-300">
+                <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">SLUŽBY</button>
                 <hr class="w-full border-0 border-b border-gray-300">
                 <button onclick="scrollToSection('#projects')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">PROJKETY</button>
                 <hr class="w-full border-0 border-b border-gray-300">
-                <button onclick="scrollToSection('#footer')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">KONTAKT</button>
+                <button onclick="scrollToSection('#contact')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">KONTAKT</button>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero Section  -->
+    <section id="hero" class="full-screen z-30 flex flex-col-reverse m:flex-row justify-center m:justify-around items-stretch relative">
+        <div class="w-[90%] m:w-[30%] self-center mt-7 sm:mt-14 m:mt-0 flex flex-col space-y-4 m:space-y-8">
+            <div class="flex flex-col space-y-3">
+                <div class="text-lightPurple text-center m:text-left">
+                    DEVITY Software
+                </div>
+                <div class="text-3xl s:text-4xl lg:text-5xl l:text-6xl xl:text-7xl text-center m:text-left font-extrabold">
+                    Webové aplikácie
+                </div>
+                <div class="text-slate-600 break-before-auto text-xs xs:text-sm s:text-base text-center m:text-left">
+                    Devity Vám pomôže zrealizovat Vaše predstavy a vytvoriť rôzne digitálne produkty pre Váš projekt presne podľa predstáv.
+                </div>
+            </div>
+            <button class="main-btn flex flex-row space-x-2 items-stretch" onclick="scrollToSection('#contact')">
+                <h2 class="self-center">Mám záujem</h2><img src="images/arrow-r.svg" alt="arrow right" class="self-center">
+            </button>
+        </div>
+        <div class="w-[80%] m:w-[50%] self-center mt-20 sm:mt-44 m:mt-0">
+            <img src="images/mac-titile.png" alt="3D illustration of our web application " class="w-[95%] mx-auto">
+        </div>
+    </section>
+    
+    <section id="projectsCompanies" class="relative z-30 max-w-[90%] w-[90%] mx-auto">
+        <div class="grid grid-cols-2 gap-4 s:grid-cols-4 items-stretch mt-8 s:mt-14 mx-auto w-[90%] ">
+            <div class="w-[40%] sm:w-[50%] mx-auto self-center grayscale hover:grayscale-0 transition-all">
+                <img src="images/EWA-logo_white.png " alt="EWA logo " class="mx-auto ">
+            </div>
+            <div class="w-[40%] sm:w-[50%] mx-auto self-center grayscale hover:grayscale-0">
+                <img src="images/kralovnej-pokoja.png " alt="kostol logo " class="w-1/2 mx-auto ">
+            </div>
+            <div class="w-[40%] sm:w-[50%] mx-auto self-center grayscale hover:grayscale-0">
+                <img src="images/olimax-logo.png " alt="Olimax logo " class="mx-auto ">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="relative z-30 max-w-[90%] w-[90%] mx-auto mt-14 s:mt-40">
+        <div class="flex flex-col m:flex-row justify-around items-stretch">
+            <img src="images/reshot-illustration-business-idea-5EXLFVMK2Z.png" alt="communication img" class="w-2/3 m:w-1/3 self-center">
+            <div class="w-[90%] m:w-1/3 self-center mt-7 sm:mt-14 m:mt-0 flex flex-col space-y-4 m:space-y-6">
+                <div class="text-lightPurple text-center m:text-left tetx-sm m:-mb-4">
+                    O NÁS
+                </div>
+                <div class="text-2xl s:text-3xl l:text-4xl xl:text-5xl text-center m:text-left">
+                    <span class="font-bold">výborný</span> návrh <br/>
+                    <span class="font-bold">výborný</span> výsledok
+                </div>
+                <div class="italic break-before-auto text-purple-400 text-center m:text-left s:text-base text-sm">
+                    Príjemné používanie aplikácie je základom úspechu
+                </div>
+                <div class="text-slate-600 break-before-auto text-xs s:text-sm text-center m:text-left">
+                    Našim cieľom nie je len vytvoriť produkt. Snažíme sa aj o vytvorenie príjemného používateľského zážitku, ktorý pomôže k úspechu aplikácie alebo systému. Preto pri vytváraní a navrhovaní myslíme aj na konkrétnych používateľov a ich potreby.
+                </div>
+            </div>
+        </div>        
+    </section>
+    
+    <section id="services" class="relative z-30 mt-14 s:mt-64">
+        <img src="images/decor-services-top.svg" alt="" class="w-full">
+        <div class="bg-[#EDEFFF]">
+            <div class="flex flex-col-reverse m:flex-row justify-around items-stretch max-w-[90%] w-[90%] mx-auto">
+                <div class="w-[90%] m:w-1/3 self-center mt-7 sm:mt-14 m:mt-0 flex flex-col space-y-4 m:space-y-8">
+                    <div class="text-lightPurple text-center text-sm m:text-left m:-mb-6">
+                        SLUŽBY
+                    </div>
+                    <div class="text-2xl s:text-3xl l:text-4xl xl:text-5xl text-center m:text-left font-bold">
+                        Softvérové riešenia na mieru
+                    </div>
+                    <div class="text-slate-600 break-before-auto text-xs s:text-sm text-center m:text-left">
+                        Či už potrebujete portál na interné účely alebo komplexnú aplikáciu aj pre zákazníkov, my Vám pomôžeme premeniť vízie na realitu. Pomôžeme rozbehnúť Váš biznis, aby o ňom vedelo čo najviac ľudí. Vytvoríme jednoduchú úvodnú stránku pre Váš produkt alebo Vašu prácu.
+                    </div>
+                </div>
+                <div class="w-[90%] xs:w-3/4 sm:w-2/3 s:w-1/2 lg:w-1/3 l:w-1/4 mx-auto grid grid-rows-13 grid-cols-2 gap-4 text-[0.5rem] xxs:text-xs xs:text-sm font-bold">
+                    <div class="row-start-2 row-span-6 col-start-1 col-span-1 bg-gradient-to-br from-[#7B29FF] to-[#933AFF] rounded-2xl drop-shadow-[0_4px_3px_rgba(53,11,89,0.48)] p-2 s:p-4 flex flex-col justify-around space-y-2">
+                        <img src="images/apps.svg" alt="apps icon" class="w-2/3 mx-auto">
+                        <h3 class="text-white font-semibold break-before-auto text-center">WEBOVÉ APLIKÁCIE</h3>
+                    </div>
+                    <div class="row-start-1 row-span-6 col-start-2 col-span-1 bg-white rounded-2xl drop-shadow-lg p-2 s:p-4 flex flex-col justify-around space-y-2">
+                        <img src="images/ux.svg" alt="ux icon" class="w-2/3 mx-auto">
+                        <h3 class="text-darkPurple break-before-auto text-center">UX / UI DIZAJN</h3>
+                    </div>
+                    <div class="row-start-8 row-span-6 col-start-1 col-span-1 bg-white rounded-2xl drop-shadow-lg p-2 s:p-4 flex flex-col justify-around space-y-2">
+                        <img src="images/eshop.svg" alt="eshop icon" class="w-2/3 mx-auto">
+                        <h3 class="text-darkPurple break-before-auto text-center">E-SHOP</h3>
+                    </div>
+                    <div class="row-start-7 row-span-6 col-start-2 col-span-1 bg-white rounded-2xl drop-shadow-lg p-2 s:p-4 flex flex-col justify-around space-y-2">
+                        <img src="images/wireframes.svg" alt="wireframes icon" class="w-2/3 mx-auto">
+                        <h3 class="text-darkPurple break-before-auto text-center">WIREFRAMES</h3>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <img src="images/decor-services-bottom.svg" alt="" class="w-full">      
+    </section>
+    
+    <section id="projects" class="relative z-30 max-w-[80%] w-[80%] mx-auto mt-14 s:mt-40">
+        <div class="text-lightPurple text-center text-sm m:text-left">
+            PROJEKTY
+        </div>
+        <div class="text-2xl s:text-3xl l:text-4xl xl:text-5xl text-center m:text-left font-bold">
+            Naša práca
+        </div>
+        
+        <div class="grid grid-cols-1 l:grid-cols-2 gap-4 mt-5 w-full mx-auto">
+            <div class="prod-card mt-4">
+                <div class="relative">
+                    <img src="images/ewa/1.png" alt="ewa example" class="ewa rounded-t-lg">
+                    <img src="images/ewa/2.png" alt="ewa example" class="ewa w-full rounded-t-lg hidden">
+                    <img src="images/ewa/3.png" alt="ewa example" class="ewa w-full rounded-t-lg hidden">
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
+                        <button onclick="carouselPrev('ewa', 0)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                    </h3>
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
+                        <button onclick="carouselNext('ewa', 0)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </h3>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">EWA</h3>
+                    <h5 class="text-gray-500">
+                        Interná aplikácia pre firmu na správu a vyplácanie odmien.
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        Blazor&nbsp;&nbsp; HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; JS&nbsp;&nbsp; Bootstrap
+                    </h6>
+                </div>
+            </div>
+            
+            <div class="prod-card mt-4 flex flex-col justify-between">
+                <div class="relative mt-6">
+                    <img src="images/livity/1.png" alt="livity example" class="livity rounded-t-lg">
+                    <img src="images/livity/2.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/3.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/4.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/5.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/6.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/7.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <img src="images/livity/8.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
+                    <h3 class="absolute text-2xl text-blue-400 rounded-full bg-transparent top-0 left-0 h-full w-1/2">
+                        <button onclick="carouselPrev('livity', 1)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                    </h3>
+                    <h3 class="absolute text-2xl text-blue-400 rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
+                        <button onclick="carouselNext('livity', 1)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </h3>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Livity&nbsp;<a href="https://devpost.com/software/livity" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h5 class="text-gray-500">
+                        15-minute city project
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        Blazor&nbsp;&nbsp; HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; JS&nbsp;&nbsp; Tailwind
+                    </h6>
+                </div>
+            </div>
+            
+            <div class="prod-card mt-4">
+                <div class="relative">
+                    <img src="images/church/4.png" alt="church example" class="church rounded-t-lg">
+                    <img src="images/church/1.png" alt="church example" class="church w-full rounded-t-lg hidden">
+                    <img src="images/church/2.png" alt="church example" class="church w-full rounded-t-lg hidden">
+                    <img src="images/church/3.png" alt="church example" class="church w-full rounded-t-lg hidden">
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
+                        <button onclick="carouselPrev('church', 2)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                    </h3>
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
+                        <button onclick="carouselNext('church', 2)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </h3>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Church app</h3>
+                    <h5 class="text-gray-500">
+                        Systém na zobrazovanie a spravovanie piesní a žalmov pre kostoly.
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        Blazor&nbsp;&nbsp; HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; JS&nbsp;&nbsp; Bootstrap
+                    </h6>
+                </div>
+            </div>
+            
+            <div class="prod-card mt-4">
+                <div class="relative">
+                    <img src="images/olimax/1.png" alt="olimax example" class="olimax w-full rounded-t-lg">
+                    <img src="images/olimax/3.png" alt="olimax example" class="olimax w-full rounded-t-lg hidden">
+                    <img src="images/olimax/2.png" alt="olimax example" class="olimax w-full rounded-t-lg hidden">
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
+                        <button onclick="carouselPrev('olimax', 3)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                    </h3>
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
+                        <button onclick="carouselNext('olimax', 3)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </h3>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Olimax&nbsp;<a href="https://olimax.sk/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h5 class="text-gray-500">
+                        Webová stránka a rezervačný systém pre požičovňu áut.
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        ASP.NET&nbsp;&nbsp; HTML&nbsp;&nbsp; CSS&nbsp;&nbsp; JS
+                    </h6>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="team" class="relative z-30 max-w-[90%] w-[90%] mx-auto mt-14 s:mt-40">
+        <div class="text-lightPurple text-center text-sm m:text-left">
+            TÍM
+        </div>
+        <div class="text-2xl s:text-3xl l:text-4xl xl:text-5xl text-center m:text-left font-bold">
+            Projekty realizujú
+        </div>
+        
+        <div class="flex flex-col m:flex-row m:justify-around mt-10 space-y-10 m:space-y-0">
+            <div class="w-[90%] sm:w-1/2 m:w-1/4 l:w-1/5 mx-auto m:mx-0 flex flex-col space-y-4">
+                <img src="images/david.png" alt="" class="rounded-full w-1/2 mx-auto">
+                <div class="text-center mx-auto">
+                    <h3 class="text-slate-600 xxs:text-sm">Dávid</h3>
+                    <div class="flex flex-row space-x-2 items-stretch">
+                        <h3 class="font-bold tracking-wide text-sm xxs:text-xl text-lightPurple self-center">KOREČKO</h3>
+                        <div>
+                            <a href="https://github.com/dkorecko" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/david-korecko/" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-xs xxs:text-sm text-slate-400">
+                        CEO, CTO, Back-end
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] sm:w-1/2 m:w-1/4 l:w-1/5 mx-auto m:mx-0 flex flex-col space-y-4">
+                <img src="images/profilFoto.jpg" alt="" class="rounded-full w-1/2 mx-auto">
+                <div class="text-center mx-auto">
+                    <h3 class="text-slate-600 xxs:text-sm">Katarína</h3>
+                    <div class="flex flex-col xs:flex-row space-x-2 items-stretch">
+                        <h3 class="font-bold tracking-wide text-sm xxs:text-xl text-lightPurple self-center">MARCINČÁKOVÁ</h3>
+                        <div>
+                            <a href="https://github.com/KatkaMarcincakova" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/katarinamarcincakova/" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-xs xxs:text-sm text-slate-400">
+                        UX / UI dizajn, Front-end
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] sm:w-1/2 m:w-1/4 l:w-1/5 mx-auto m:mx-0 flex flex-col space-y-4">
+                <img src="images/andrej.png" alt="" class="rounded-full w-1/2 mx-auto">
+                <div class="text-center mx-auto">
+                    <h3 class="text-slate-600 xxs:text-sm">Andrej</h3>
+                    <div class="flex flex-row space-x-2 items-stretch">
+                        <h3 class="font-bold tracking-wide text-sm xxs:text-xl text-lightPurple self-center">KAŽMIRSKÝ</h3>
+                        <!--<div>
+                            
+                            <a href="" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-400 hover:text-lightPurple self-center"><i class="fa-brands fa-linkedin-in"></i></a>
+                                
+                        </div>-->
+                    </div>
+                    <div class="text-xs xxs:text-sm text-slate-400">
+                        Back-end, Front-end
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="relative z-30 mt-14 s:mt-40">
+        <img src="images/decor-services-bottom.svg" alt="" class="w-full rotate-180">      
+        <div class="bg-[#EDEFFF]">
+            <div class="flex flex-col m:flex-row justify-around items-stretch max-w-[90%] w-[90%] mx-auto">
+                <img src="images/phone.png" alt="" class="w-1/2 xs:w-1/3 s:w-1/4 sm:w-1/5 m:w-1/6 mx-auto">
+                <div class="w-[90%] m:w-1/2 self-center mt-7 sm:mt-14 m:mt-0 flex flex-col space-y-4 m:space-y-8">
+                    <div class="sm:text-2xl s:text-3xl l:text-4xl xl:text-5xl text-center m:text-left gradient-title">
+                        MÁTE NÁPAD, KTORÝ BY STE CHCELI REALIZOVAŤ?
+                    </div>
+                    <div class="text-slate-600 break-before-auto s:text-2xl text-center m:text-left">
+                        Neváhajte nás kontaktovať na devitysw@gmail.com
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <img src="images/decor-services-top.svg" alt="" class="w-full rotate-180">
+    </section>
+    
+    <footer class="w-full bg-violet-200 text-darkPurple  mt-20 p-2">
+        <div class="max-w-[90%] w-[90%] mx-auto flex flex-row justify-between items-stretch">
+            <div class="flex flex-row items-stretch space-x-2 self-center">
+                <img src="images/d.png" alt="" class="w-5 self-center">
+                <h6 class="self-center text-sm">Softvérové riešenia podľa Vašich predstáv</h6>
+            </div>
+            <div class="flex flex-row space-x-4 self-center">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Hero Section 
     <section id="hero" class="full-screen bg-black text-white z-0 flex flex-col-reverse md:flex-row justify-center items-stretch ">
         <div class="w-[95%] md:w-[45%] self-center mt-14 md:mt-0 ">
             <div class="text-xl xs:text-3xl sm:text-4xl s:text-5xl lg:text-6xl l:text-7xl xl:text-8xl text-center md:text-left gradient-title">
@@ -155,7 +467,7 @@
             </div>
         </div>
     </section>
-    
+    --><!--
     <section id="about" class="bg-purple-400">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
             <path class="fill-black" style="opacity:0.75" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
@@ -168,11 +480,11 @@
                 <span class="px-6 text-black">TÍM</span> <br>
                 <hr class="mt-4 border-0 border-b-[3px] rounded-md border-purple-500 ">
             </div>
-            <!--
+            
             <p class="text-center text-xs sm:text-sm m:text-base mt-14 w-full md:w-[60%] mx-auto ">
                 Sme dvaja mladí košičania, ktorých baví tvoriť nové veci. Programovaniu sa venujeme už 10 rokov a máme za sebou nejeden projekt. Stále sa snažíme zlepšovať a posúvať úroveň našich aplikácii a webov na vyšší level.
             </p>
--->
+
             <div class="flex flex-col m:flex-row m:justify-around mt-14 mx-auto w-full space-y-20 m:space-y-0 ">
                 <div class="w-full m:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto m:mx-0 ">
                     <img src="images/david.png " alt="photo of david " class="rounded-full w-3/4 xs:w-[40%] sm:w-1/3 s:w-1/4 m:w-[70%] mx-auto ">
@@ -249,86 +561,13 @@
             </div>
         </div>
     </section>
-
-    <section id="contact-us" class=" z-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
-            <path class="fill-purple-500" style="opacity:1" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
-            <path class="fill-purple-500" style="opacity:0.75" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
-            <path class="fill-black" d="M0 0L2600 0 2600 69.1 0 0z"></path>
-        </svg>
-        
-        <div class="max-w-[90%] w-[90%] mx-auto pb-5 pt-5 xs:pt-10 s:pt-20 ">
-            <div class="flex flex-col md:flex-row md:justify-around space-y-4 md:space-y-0 items-stretch">
-                <div class="w-[90%] sm:w-2/3 md:w-1/3 self-center">
-                   <div class="grid grid-cols-7 gap-0">
-                        <!-- riadok 1-->
-                        <div class="col-start-1 col-span-1 w-5 h-5 xxs:w-8 xxs:h-8 md:w-5 md:h-5 l:w-10 l:h-10 mx-auto my-auto bg-gradient-to-br from-lightPurple to-purple-500 rounded-full"></div>
-                        <div class="col-start-2 col-span-8"></div>
-                        <div class="col-start-10 col-span-1 row-span-2 w-5 h-5 xxs:w-8 xxs:h-8 md:w-5 md:h-5 l:w-10 l:h-10 mx-auto mt-4 bg-gradient-to-br from-lightPurple to-purple-500 rounded-full"></div>
-                        <!-- riadok 2-->
-                        <div class="col-start-2 col-span-3 row-span-3 mx-auto my-auto w-16 h-16 xxs:w-20 xxs:h-20 md:h-16 md:w-16 l:w-32 l:h-32 rounded-full">
-                            <img src="images/david.png" alt="david photo" class="w-full rounded-full">
-                        </div>
-                        <div class="col-start-5 col-span-5"></div>
-                        <!-- riadok 3-->
-                        <div class="col-start-5 col-span-3 row-span-2 bg-gradient-to-br from-lightPurple to-purple-500 mx-auto my-auto w-10 h-10 xxs:w-14 xxs:h-14 md:w-10 md:h-10 l:w-20 l:h-20 rounded-full"></div>
-                        <div class="col-start-8 col-span-3"></div>
-                        <!-- riadok 4-->
-                        <div class="col-start-2 col-span-2 row-span-2 w-5 h-5 xxs:w-8 xxs:h-8 md:w-5 md:h-5 l:w-10 l:h-10 ml-auto mt-auto mr-0 mb-0 bg-gradient-to-br from-lightPurple to-purple-500 rounded-full"></div>
-                        <div class="col-start-9 col-span-2 row-span-2 bg-gradient-to-br from-lightPurple to-purple-500 mx-auto my-auto w-10 h-10 xxs:w-14 xxs:h-14 md:w-10 md:h-10 l:w-20 l:h-20 rounded-full"></div>
-                        <!-- riadok 5-->
-                        <div class="col-start-4 col-span-3 row-span-3 mx-auto my-auto w-16 h-16 xxs:w-20 xxs:h-20 md:h-16 md:w-16 l:w-32 l:h-32 rounded-full">
-                            <img src="images/profilFoto.jpg" alt="katka photo" class="w-full rounded-full">
-                        </div>
-                        <div class="col-start-8 col-span-3"></div>
-                        <!-- riadok 6-->
-                        <div class="col-start-2 col-span-2 row-span-2 bg-gradient-to-br from-lightPurple to-purple-500 mx-auto my-auto w-10 h-10 xxs:w-14 xxs:h-14 md:w-10 md:h-10 l:w-20 l:h-20 rounded-full"></div>
-                        <div class="col-start-9 col-span-1 w-5 h-5 xxs:w-8 xxs:h-8 md:w-5 md:h-5 l:w-10 l:h-10 mx-auto my-auto bg-gradient-to-br from-lightPurple to-purple-500 rounded-full"></div>
-                        <div class="col-start-10 col-span-1"></div>
-                        <!-- riadok 7-->
-                        <div class="col-start-7 col-span-2 row-span-2 w-5 h-5 xxs:w-8 xxs:h-8 md:w-5 md:h-5 l:w-10 l:h-10 mx-auto my-auto bg-gradient-to-br from-lightPurple to-purple-500 rounded-full"></div>
-                   </div>
-                </div>
-                <div class="w-[90%] md:w-[40%] self-center tracking-widest flex flex-col space-y-4">
-                    <h2 class="text-lightPurple font-bold text-xs xxs:text-2xl sm:text-3xl l:text-4xl text-center md:text-left">MÁTE NÁPAD, KTORÝ BY STE CHCELI ZREALIZOVAŤ?</h2>
-                    <h6 class="text-sm xxs:text-lg sm:text-xl l:text-2xl text-center md:text-left">Neváhajte nás kontaktovať na info@devity.sk</h6>
-                </div>
-            </div>
-        </div>
-        
-        <div class="-mb-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
-                <path class="fill-purple-500" style="opacity:0.75" d="M0 60 L2600 0 L2600 129.1 0 60z"></path>
-                <path class="fill-purple-500" style="opacity:1" d="M0 60 L2600 60 L2600 129.1 0 60z"></path>
-                <path class="fill-black" d="M0 60 L0 129.1 L2600 129.1 0 60z"></path>
-            </svg>
-        </div>
-    </section>
-    
-    <footer id="footer" class="bg-black text-white w-full">
-        <div class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-10 w-max max-w-[90%] mx-auto items-stretch text-xs">
-            <div class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 md:space-x-2 items-stretch lg:h-max self-center">
-                <img src="images/d-white.png" alt="logo" class="h-4 self-center hidden lg:block">
-                <img src="images/logo-white.png" alt="logo" class="h-5 self-center block lg:hidden">
-                <hr class="border-l-2 h-6 hidden lg:block">
-                <h3 class="self-center text-center tracking-wide">Softvérove riešenia podľa Vašich predstáv</h3>
-            </div>
-            <div class="flex flex-row space-x-8 text-lg self-center">
-                <a href=" " class="hover:text-purple-400 "><i class="fa-brands fa-linkedin-in "></i></a>
-                <a href=" " class="hover:text-purple-400 "><i class="fa-brands fa-instagram "></i></a>
-                <a href=" " class="hover:text-purple-400 "><i class="fa-brands fa-square-facebook "></i></a>
-            </div>
-            <a href="contact.html" class="animated-underline self-center">KONTAKT</a>
-            <a href="services.html" class="animated-underline self-center">SLUŽBY</a>
-            <a href="projects.html" class="animated-underline self-center">PROJEKTY</a>
-        </div>
-        <h6 class="w-full text-center text-[0.6rem] py-2"><i class="fa-regular fa-copyright"></i>&nbsp;2023</h6>
-    </footer>
+-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="burger-menu.js"></script>
     <script src="tabicon.js"></script>
     <script src="carousel.js"></script>
+    <script src="decor.js"></script>
 </body>
 
 </html>
