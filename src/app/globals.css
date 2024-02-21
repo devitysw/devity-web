@@ -57,8 +57,8 @@ button, a, .smooth-show {
   cursor: pointer;
 }
 
-button {
-  @apply bg-dark text-white px-4 py-2 rounded-full hover:bg-lime hover:text-dark hover:font-semibold;
+.button-primary {
+  @apply bg-dark text-white px-9 py-3 rounded-full hover:bg-lime hover:text-dark hover:font-semibold;
 }
 
 /*Nav animations
