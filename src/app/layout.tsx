@@ -18,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} content py-4 flex flex-col space-y-8`}>
+      <body className={`${montserrat.className} py-4 flex flex-col space-y-8`}>
         <Navbar/>
-        {children}
+        <div className="content ">
+          {children}
+        </div>
       </body>
     </html>
   );

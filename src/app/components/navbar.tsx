@@ -1,9 +1,14 @@
-import logo from "../../../public/logo-landscape.svg";
+'use client'
 
-function Navbar() {
+import logo from "../../../public/logo-landscape.svg";
+import { useState } from "react";
+
+export default function Navbar() {
+    const [menuState, toggleMenu] = useState(false);
+
     return (
         <main>
-            <div className="w-full rounded-3xl bg-light px-8 py-6 flex flex-row justify-between items-stretch">
+            <div className="content w-full rounded-3xl bg-light px-8 py-6 flex flex-row justify-between items-stretch">
                 <div className="self-center">
                     <a href="/" className="h-full">
                         <img src={logo.src} alt="company logo" className="h-8 l:h-9 self-center" loading="lazy"/>
@@ -25,15 +30,15 @@ function Navbar() {
                     </button>
                 </div>
 
-                <button id="menu-btn" className="block hamburger self-center md:hidden focus:outline-none" aria-label="toggle mobile menu button">
+                <button id="menu-btn" className={`block hamburger self-center md:hidden focus:outline-none ${menuState ? 'open' : ''}`} aria-label="toggle mobile menu button" onClick={() => toggleMenu(!menuState)}>
                     <span className="hamburger-top"></span>
                     <span className="hamburger-middle"></span>
                     <span className="hamburger-bottom"></span>
                 </button>
             </div>
 
-            <div id="menu" className="full-screen hidden z-50 fixed backdrop-blur-sm mt-8">
-                <div className="font-semibold tracking-widest bg-white">
+            <div id="menu" className={`w-full h-screen ${menuState ? '' : 'hidden'} z-50 fixed backdrop-blur-sm`}>
+                <div className="font-semibold tracking-widest bg-white content">
                     <div className="flex flex-col max-w-[90%] mx-auto">
                         <button id="services-btn" className="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to services button">SERVICES</button>
                         <hr className="w-full border-0 border-b border-gray-500"/>
@@ -48,5 +53,3 @@ function Navbar() {
         </main>
     );
 }
-
-export default Navbar;
