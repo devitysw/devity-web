@@ -15,31 +15,31 @@ body {
 }
 
 .title {
-    @apply text-[2rem] xs:text-[2.5rem] s:text-[3rem] m:text-[3.5rem] l:text-[4rem];
+    @apply text-3xl xs:text-4xl s:text-5xl m:text-6xl l:text-7xl;
 }
 
 h1 {
-    @apply text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem];
+    @apply text-2xl xs:text-3xl s:text-4xl m:text-5xl l:text-6xl;
 }
 
 h2 {
-    @apply text-[0.85rem] sm:text-[1rem] md:text-[1.295rem] lg:text-[1.073rem];
+    @apply text-xl xs:text-2xl s:text-3xl m:text-4xl l:text-5xl;
 }
 
 h3 {
-    @apply text-[0.75rem] sm:text-[0.875rem] md:text-[1.133rem] lg:text-[0.941rem];
+    @apply text-lg xs:text-xl s:text-2xl m:text-3xl l:text-4xl;
 }
 
 h4 {
-    @apply text-[0.65rem] sm:text-[0.765rem] md:text-[0.98rem] lg:text-[0.81rem];
+    @apply text-base xs:text-lg s:text-xl m:text-2xl l:text-3xl;
 }
 
 h5 {
-    @apply text-[0.55rem] sm:text-[0.65rem] md:text-[0.85rem] lg:text-[0.7rem];
+    @apply text-sm xs:text-base s:text-lg m:text-xl l:text-2xl;
 }
 
 h6 {
-    @apply text-[0.5rem] sm:text-[0.585rem] md:text-[0.75rem] lg:text-[0.625rem];
+    @apply text-xs xs:text-sm s:text-base m:text-lg l:text-xl;
 }
 
 @layer utilities {
