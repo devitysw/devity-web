@@ -2,8 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 
 import Carousel from "@components/Carousel.astro";
+import Logo from "@components/Logo.astro";
+
+import gorazdLogo from "@assetsLocal/company/gorazd.svg";
+import olimaxLogo from "@assetsLocal/company/olimax.svg";
 ---
 
 <Layout title="Home">
     <Carousel />
+    <div
+        class="w-full flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-around"
+    >
+        <Logo path={gorazdLogo.src} alt="CZŠ s MŠ sv. Gorazda Košice logo" />
+        <Logo path={olimaxLogo.src} alt="Olimax logo" />
+    </div>
 </Layout>
