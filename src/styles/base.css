@@ -17,23 +17,29 @@ body {
 .title {
     @apply text-[2rem] xs:text-[2.5rem] s:text-[3rem] m:text-[3.5rem] l:text-[4rem];
 }
+
 h1 {
-    font-size: 2rem;
+    @apply text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2rem];
 }
+
 h2 {
-    font-size: 1.741rem !important;
+    @apply text-[0.85rem] sm:text-[1rem] md:text-[1.295rem] lg:text-[1.073rem];
 }
+
 h3 {
-    font-size: 1.516rem !important;
+    @apply text-[0.75rem] sm:text-[0.875rem] md:text-[1.133rem] lg:text-[0.941rem];
 }
+
 h4 {
-    font-size: 1.32rem !important;
+    @apply text-[0.65rem] sm:text-[0.765rem] md:text-[0.98rem] lg:text-[0.81rem];
 }
+
 h5 {
-    font-size: 1.149rem !important;
+    @apply text-[0.55rem] sm:text-[0.65rem] md:text-[0.85rem] lg:text-[0.7rem];
 }
+
 h6 {
-    font-size: 1rem !important;
+    @apply text-[0.5rem] sm:text-[0.585rem] md:text-[0.75rem] lg:text-[0.625rem];
 }
 
 @layer utilities {
