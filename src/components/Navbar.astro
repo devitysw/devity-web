@@ -1,0 +1,83 @@
+﻿---
+import logo from "@assetsLocal/logo/logo-landscape.svg";
+---
+
+<div
+    class="content w-full rounded-3xl bg-light px-8 py-6 flex flex-row justify-between items-stretch"
+>
+    <div class="self-center">
+        <a href="/" class="h-full">
+            <img
+                src={logo.src}
+                alt="company logo"
+                class="h-8 l:h-9 self-center"
+                loading="lazy"
+            />
+        </a>
+    </div>
+
+    <div class="hidden space-x-12 self-center text-sm font-normal md:flex">
+        <a
+            href="#projects"
+            class="animated-underline self-center"
+            aria-label="navigate to about me button"
+        >
+            Projekty
+        </a>
+        <a
+            href="#services"
+            class="animated-underline self-center"
+            aria-label="navigate to projects button"
+        >
+            Služby
+        </a>
+        <a
+            href="#about"
+            class="animated-underline self-center"
+            aria-label="navigate to contact button"
+        >
+            O&nbsp;nás
+        </a>
+        <button class="button-primary"> Kontakt</button>
+    </div>
+
+    <button
+        id="menu-btn"
+        class="block hamburger self-center md:hidden focus:outline-none"
+        aria-label="toggle mobile menu button"
+    >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+</div>
+
+<div id="menu" class="w-full h-screen hidden z-50 backdrop-blur-sm mt-24">
+    <div class="font-semibold tracking-widest bg-white content">
+        <div class="flex flex-col max-w-[90%] mx-auto">
+            <button
+                id="services-btn"
+                class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+                aria-label="navigate to services button">SERVICES</button
+            >
+            <hr class="w-full border-0 border-b border-gray-500" />
+            <button
+                id="about-btn"
+                class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+                aria-label="navigate to about me button">ABOUT</button
+            >
+            <hr class="w-full border-0 border-b border-gray-500" />
+            <button
+                id="projects-btn"
+                class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+                aria-label="navigate to projects button">PROJECTS</button
+            >
+            <hr class="w-full border-0 border-b border-gray-500" />
+            <button
+                id="contact-btn"
+                class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+                aria-label="navigate to contact button">CONTACT</button
+            >
+        </div>
+    </div>
+</div>

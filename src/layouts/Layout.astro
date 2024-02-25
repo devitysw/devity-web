@@ -6,7 +6,10 @@ interface Props {
 const { title } = Astro.props;
 
 import "../styles/base.css";
+
 import favicon from "../assets/logo/favicon.ico";
+
+import Navbar from "@components/Navbar.astro";
 ---
 
 <!doctype html>
@@ -32,7 +35,11 @@ import favicon from "../assets/logo/favicon.ico";
             rel="stylesheet"
         />
     </head>
-    <body>
-        <slot />
+    <body class="py-4 flex flex-col space-y-8">
+        <Navbar />
+        <main class="content">
+            <slot />
+        </main>
+        <script src="../scripts/burger-menu.js"></script>
     </body>
 </html>
