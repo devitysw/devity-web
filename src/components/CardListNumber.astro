@@ -1,0 +1,20 @@
+---
+const { icon, number, title, desc, bgColor, textColor } = Astro.props;
+---
+
+<div class="w-full flex flex-row space-x-4 bg-light p-4 rounded-xl">
+    <div
+        class=`${bgColor} w-12 h-10 rounded-lg flex justify-center items-stretch`
+    >
+        <h6 class=`self-center m-0 ${textColor}`>{number}.</h6>
+    </div>
+    <div class="w-full">
+        <h4 class="font-bold">{title}</h4>
+        <p class="mt-2">
+            {desc}
+        </p>
+    </div>
+    <div class="hidden sm:block">
+        <img src={icon} alt="illustration icon" class="h-full" />
+    </div>
+</div>
