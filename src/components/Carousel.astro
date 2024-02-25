@@ -1,0 +1,64 @@
+﻿---
+import CarouselItem from "@components/CarouselItem.astro";
+
+import aws from "@assetsLocal/carousel/aws.png";
+import web from "@assetsLocal/carousel/web.svg";
+import app from "@assetsLocal/carousel/app.svg";
+import ui from "@assetsLocal/carousel/ui.svg";
+---
+
+<div class="w-full max-w-full h-[80vh] m-auto z-0 bg-light rounded-3xl">
+    <CarouselItem
+        title="Webové aplikácie"
+        desc="pre firmy a organizácie"
+        type="purple"
+        image={app.src}
+    />
+    <CarouselItem
+        title="Prezentačné stránky"
+        desc="pre ľudí, projekty, produkty"
+        type="lime"
+        image={web.src}
+    />
+    <CarouselItem
+        title="Dizajnové návrhy"
+        desc="UX a UI návrhy stránok a aplikácií"
+        type="purple"
+        image={ui.src}
+    />
+    <CarouselItem
+        title="Cloudové riešenia"
+        desc="Návrh a realizácia cloudových riešení za použitia AWS"
+        type="lime"
+        image={aws.src}
+    />
+</div>
+
+<script>
+    var slides = document.getElementsByClassName("carousel");
+
+    var carouselIndex = 0;
+    if (slides.length > 0) {
+        slides[carouselIndex].classList.remove("hide");
+        slides[carouselIndex].classList.add("show");
+    }
+
+    setInterval(carouselLoop, 5000);
+
+    function showNext() {
+        slides[carouselIndex].classList.remove("hide");
+        slides[carouselIndex].classList.add("show");
+    }
+
+    function carouselLoop() {
+        if (slides.length > 0) {
+            slides[carouselIndex].classList.remove("show");
+            slides[carouselIndex].classList.add("hide");
+            carouselIndex = carouselIndex + 1;
+            if (carouselIndex == slides.length) {
+                carouselIndex = 0;
+            }
+            setTimeout(showNext, 1000);
+        }
+    }
+</script>

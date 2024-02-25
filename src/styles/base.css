@@ -9,22 +9,16 @@ body {
     @apply text-dark;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .titleFont,
 .title {
-    font-weight: 700 !important;
+    font-weight: 800 !important;
 }
 
 .title {
     @apply text-[2rem] xs:text-[2.5rem] s:text-[3rem] m:text-[3.5rem] l:text-[4rem];
 }
 h1 {
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
 h2 {
     font-size: 1.741rem !important;
@@ -83,6 +77,14 @@ a,
 
 .button-primary {
     @apply bg-dark text-white px-9 py-3 rounded-full hover:bg-lime hover:text-dark hover:font-semibold;
+}
+
+.button-lime {
+    @apply bg-lime text-dark px-9 py-3 rounded-full hover:bg-dark hover:text-lime font-semibold;
+}
+
+.button-purple {
+    @apply bg-purple text-dark px-9 py-3 rounded-full hover:bg-dark hover:text-purple font-semibold;
 }
 
 /*Nav animations
@@ -153,4 +155,66 @@ a,
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* Carousel */
+.hide {
+    -webkit-animation: hide 1s ease-in-out;
+    animation: hide 1s ease-in-out;
+
+    @apply hidden;
+}
+
+@-webkit-keyframes hide {
+    from {
+        opacity: 1;
+
+        @apply block;
+    }
+    to {
+        opacity: 0;
+
+        @apply hidden;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+
+        @apply block;
+    }
+    to {
+        opacity: 0;
+
+        @apply hidden;
+    }
+}
+
+.show {
+    -webkit-animation: show 1s ease-in-out;
+    animation: show 1s ease-in-out;
+    @apply block;
+}
+
+@-webkit-keyframes show {
+    from {
+        opacity: 0;
+        @apply hidden;
+    }
+    to {
+        opacity: 1;
+        @apply block;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        @apply hidden;
+    }
+    to {
+        opacity: 1;
+        @apply block;
+    }
 }
