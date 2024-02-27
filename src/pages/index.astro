@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Carousel from "@components/Carousel.astro";
 import Logo from "@components/Logo.astro";
 import CardListNumber from "@components/CardListNumber.astro";
+import ProjectCard from "@components/ProjectCard.astro";
 
 import gorazdLogo from "@assetsLocal/company/gorazd.svg";
 import olimaxLogo from "@assetsLocal/company/olimax.svg";
@@ -12,56 +13,106 @@ import design from "@assetsLocal/illustrations/design.svg";
 import code from "@assetsLocal/illustrations/code.svg";
 import launch from "@assetsLocal/illustrations/launch.svg";
 import brand from "@assetsLocal/illustrations/bwink_msc_05_single_07.jpg";
+import churchMockup from "@assetsLocal/mockups/church.svg";
 ---
 
 <Layout title="Home">
-    <Carousel />
-    <div
-        class="w-full flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-around"
-    >
-        <Logo path={gorazdLogo.src} alt="CZŠ s MŠ sv. Gorazda Košice logo" />
-        <Logo path={olimaxLogo.src} alt="Olimax logo" />
-    </div>
+    <section id="home" class="content">
+        <Carousel />
+    </section>
 
-    <div
-        class="flex flex-col-reverse lg:flex-row justify-between items-stretch w-full"
-    >
-        <div class="w-full lg:w-1/2 self-center">
-            <h1 class="font-extrabold">Od návrhu</h1>
-            <h1 class="font-extrabold">po realizáciu</h1>
-            <div class="flex flex-col space-y-6 mt-12 w-full">
-                <CardListNumber
-                    number="1"
-                    icon={design.src}
-                    bgColor="bg-lime"
-                    textColor="text-dark"
-                    title="UX/UI dizajn"
-                    desc="Funkčný a dizajnový návrh webových stránok a aplikácií"
-                />
-                <CardListNumber
-                    number="2"
-                    icon={code.src}
-                    bgColor="bg-dark"
-                    textColor="text-white"
-                    title="Tvorba strány / aplikácie"
-                    desc="Realizácia a testovanie webový stránok a aplikácií"
-                />
-                <CardListNumber
-                    number="3"
-                    icon={launch.src}
-                    bgColor="bg-purple"
-                    textColor="text-dark"
-                    title="Spustenie aplikácie"
-                    desc="Nasadenie a udržiavanie webových stránok a aplikácií"
+    <section id="companies" class="content">
+        <div
+            class="w-full flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-around"
+        >
+            <Logo
+                path={gorazdLogo.src}
+                alt="CZŠ s MŠ sv. Gorazda Košice logo"
+            />
+            <Logo path={olimaxLogo.src} alt="Olimax logo" />
+        </div>
+    </section>
+
+    <section id="process" class="content">
+        <div
+            class="flex flex-col-reverse lg:flex-row justify-between items-stretch w-full"
+        >
+            <div class="w-full lg:w-1/2 self-center">
+                <h1 class="font-extrabold">Od návrhu</h1>
+                <h1 class="font-extrabold">po realizáciu</h1>
+                <div class="flex flex-col space-y-6 mt-12 w-full">
+                    <CardListNumber
+                        number="1"
+                        icon={design.src}
+                        bgColor="bg-lime"
+                        textColor="text-dark"
+                        title="UX/UI dizajn"
+                        desc="Funkčný a dizajnový návrh webových stránok a aplikácií"
+                    />
+                    <CardListNumber
+                        number="2"
+                        icon={code.src}
+                        bgColor="bg-dark"
+                        textColor="text-white"
+                        title="Tvorba strány / aplikácie"
+                        desc="Realizácia a testovanie webový stránok a aplikácií"
+                    />
+                    <CardListNumber
+                        number="3"
+                        icon={launch.src}
+                        bgColor="bg-purple"
+                        textColor="text-dark"
+                        title="Spustenie aplikácie"
+                        desc="Nasadenie a udržiavanie webových stránok a aplikácií"
+                    />
+                </div>
+            </div>
+            <div class="hidden lg:block w-1/2 self-center">
+                <img
+                    src={idea.src}
+                    alt="iluustration idea"
+                    class="w-[90%] mr-0 ml-auto transform -scale-x-100"
                 />
             </div>
         </div>
-        <div class="hidden lg:block w-1/2 self-center">
-            <img
-                src={idea.src}
-                alt="iluustration idea"
-                class="w-[90%] mr-0 ml-auto transform -scale-x-100"
-            />
+    </section>
+
+    <section class="bg-dark text-white py-16">
+        <div class="content">
+            <h2 class="font-extrabold text-center">Projekty z našej dielne:</h2>
+            <h2 class="font-extrabold text-center mt-4">
+                Kreatívne riešenia a inovácie
+            </h2>
+
+            <div class="flex flex-col space-y-8 mt-16">
+                <ProjectCard
+                    title="Cirkevná ZŠ s MŠ sv. Gorazda, Košice"
+                    desc="Webová aplikácia, ktorá umožňuje kántorom v kostole zobrazovať na monitoroch texty aktuálnych piesní."
+                    moreInfo="/"
+                    image={churchMockup.src}
+                    color="text-lime"
+                    btn="button-lime"
+                />
+                <ProjectCard
+                    title="ChurchApp"
+                    desc="Webová aplikácia, ktorá umožňuje kántorom v kostole zobrazovať na monitoroch texty aktuálnych piesní."
+                    moreInfo="/"
+                    image={churchMockup.src}
+                    color="text-purple"
+                    btn="button-purple"
+                />
+                <ProjectCard
+                    title="Olimax"
+                    desc="Webová aplikácia, ktorá umožňuje kántorom v kostole zobrazovať na monitoroch texty aktuálnych piesní."
+                    moreInfo="/"
+                    image={churchMockup.src}
+                    color="text-lime"
+                    btn="button-lime"
+                />
+            </div>
+            <div class="flex flex-row justify-center mt-12">
+                <a href="" class="font-extrabold">Zobraziť všetky projekty</a>
+            </div>
         </div>
-    </div>
+    </section>
 </Layout>
