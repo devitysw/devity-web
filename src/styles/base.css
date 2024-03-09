@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    @apply text-xl xs:text-2xl s:text-3xl m:text-4xl l:text-5xl;
+    @apply text-2xl s:text-3xl m:text-4xl l:text-5xl;
 }
 
 h3 {
