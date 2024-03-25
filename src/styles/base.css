@@ -224,3 +224,26 @@ a,
         @apply block;
     }
 }
+
+.tech-card-l,
+.tech-card-g,
+.tech-card-p,
+.tech-card-d {
+    @apply bg-light rounded-3xl px-1 py-4 flex items-center;
+}
+
+.tech-card-g {
+    @apply bg-lime;
+}
+
+.tech-card-p {
+    @apply bg-purple;
+}
+
+.tech-card-d {
+    @apply bg-black;
+}
+
+.tech-card-image {
+    @apply w-2/3 mx-auto;
+}

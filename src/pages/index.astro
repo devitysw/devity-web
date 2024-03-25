@@ -14,6 +14,20 @@ import code from "@assetsLocal/illustrations/code.svg";
 import launch from "@assetsLocal/illustrations/launch.svg";
 import brand from "@assetsLocal/illustrations/bwink_msc_05_single_07.jpg";
 import churchMockup from "@assetsLocal/mockups/church.svg";
+
+import postgre from "@assetsLocal/logo/techstack/postgre.svg";
+import typescript from "@assetsLocal/logo/techstack/Typescript.svg";
+import wpf from "@assetsLocal/logo/techstack/WPF.svg";
+import astro from "@assetsLocal/logo/techstack/astro.svg";
+import aws from "@assetsLocal/logo/techstack/aws.svg";
+import blazor from "@assetsLocal/logo/techstack/blazor.svg";
+import gh from "@assetsLocal/logo/techstack/gh.svg";
+import mysql from "@assetsLocal/logo/techstack/mysql.png";
+import net from "@assetsLocal/logo/techstack/net.svg";
+import react from "@assetsLocal/logo/techstack/react.svg";
+import tailwind from "@assetsLocal/logo/techstack/tailwind.svg";
+import tina from "@assetsLocal/logo/techstack/tina.svg";
+import terraform from "@assetsLocal/logo/techstack/terraform.svg";
 ---
 
 <Layout title="Home">
@@ -122,67 +136,73 @@ import churchMockup from "@assetsLocal/mockups/church.svg";
         <h2 class="font-bold my-8 max-w-sm">
             Technológie, s ktorými pracujeme
         </h2>
-        <div class="grid grid-cols-12 grid-rows-7 gap-4">
-            <div class="col-span-2 row-span-2 col-start-5 bg-yellow-300">
-                postgre
-            </div>
-            <div class="col-span-2 row-span-1 col-start-8 bg-yellow-300">
-                Typescript
+        <div
+            class="grid grid-cols-6 s:grid-cols-10 grid-rows-7 gap-4 lg:w-5/6 l:w-4/6 mx-auto"
+        >
+            <div
+                class="col-span-2 row-span-2 col-start-5 row-start-1 s:col-start-4 s:row-start-1 tech-card-l"
+            >
+                <img src={postgre.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-1 row-span-1 col-start-7 row-start-2 bg-yellow-300"
+                class="col-span-2 row-span-1 col-start-3 s:col-start-7 tech-card-g"
             >
-                WPF
+                <img src={typescript.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-9 row-start-2 bg-yellow-300"
+                class="col-span-2 s:col-span-1 row-span-1 col-start-5 row-start-7 s:col-start-6 s:row-start-2 tech-card-p"
             >
-                GH actions
+                <img src={wpf.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-1 col-start-4 row-start-3 bg-yellow-300"
+                class="col-span-2 row-span-2 row-start-3 col-start-5 s:col-start-8 s:row-start-2 tech-card-l"
             >
-                React
+                <img src={gh.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-7 row-start-3 bg-yellow-300"
+                class="col-span-2 row-span-1 col-start-1 s:col-start-3 row-start-3 tech-card-d"
             >
-                Blazor
+                <img src={react.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-2 row-start-4 bg-yellow-300"
+                class="col-span-2 row-span-2 col-start-1 row-start-1 s:col-start-6 s:row-start-3 tech-card-l"
             >
-                .NET
+                <img src={blazor.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-1 row-span-2 col-start-6 row-start-4 bg-yellow-300"
+                class="col-span-2 row-span-2 row-start-4 col-start-1 s:row-start-4 tech-card-g"
             >
-                TinaCMS
+                <img src={net.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-10 row-start-4 bg-yellow-300"
+                class="col-span-2 s:col-span-1 row-span-2 row-start-5 col-start-3 s:col-start-5 s:row-start-4 tech-card-d"
             >
-                MySQL
+                <img src={tina.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-4 row-start-5 bg-yellow-300"
+                class="col-span-2 row-span-2 row-start-7 col-start-3 s:col-start-9 s:row-start-4 tech-card-l"
             >
-                AWS
+                <img src={mysql.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-1 col-start-7 row-start-5 bg-yellow-300"
+                class="col-span-2 row-span-2 row-start-2 col-start-3 s:row-start-5 tech-card-l"
             >
-                Tailwind
+                <img src={aws.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-1 row-span-2 col-start-9 row-start-5 bg-yellow-300"
+                class="col-span-2 row-span-1 row-start-4 col-start-3 s:col-start-6 s:row-start-5 tech-card-l"
             >
-                Astro
+                <img src={tailwind.src} class="tech-card-image" />
             </div>
             <div
-                class="col-span-2 row-span-2 col-start-6 row-start-6 bg-yellow-300"
+                class="col-span-2 s:col-span-1 row-span-2 row-start-5 col-start-5 s:col-start-8 s:row-start-5 tech-card-p"
             >
-                Terraform
+                <img src={astro.src} class="tech-card-image" />
+            </div>
+            <div
+                class="col-span-2 row-span-2 col-start-1 s:col-start-5 row-start-6 tech-card-l"
+            >
+                <img src={terraform.src} class="tech-card-image" />
             </div>
         </div>
     </section>
