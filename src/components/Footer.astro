@@ -1,0 +1,61 @@
+---
+import logo from "@assetsLocal/logo/logo-landscape-white.svg";
+---
+
+<div class="content bg-dark text-light rounded-3xl px-8 py-6">
+    <div
+        class="grid grid-cols-1 xs:grid-cols-4 s:grid-cols-6 m:grid-cols-9 gap-2"
+    >
+        <img
+            src={logo.src}
+            alt="logo"
+            class="w-2/3 xs:w-1/2 s:w-full max-w-52 col-span-1 xs:col-span-4 s:col-span-2 mb-4 s:mb-0 mx-auto xs:ml-0"
+        />
+
+        <div class="col-span-1 xs:col-span-2 m:col-start-4">
+            <h5 class="font-extrabold text-center xs:text-left">Odkazy</h5>
+            <div class="flex flex-col space-y-2 text-sm mt-4 font-light">
+                <a href="" class="animated-underline w-max mx-auto xs:ml-0">
+                    Projekty
+                </a>
+                <a href="" class="animated-underline w-max mx-auto xs:ml-0">
+                    Služby
+                </a>
+                <a href="" class="animated-underline w-max mx-auto xs:ml-0">
+                    Technológie
+                </a>
+                <a href="" class="animated-underline w-max mx-auto xs:ml-0">
+                    Proces vývoja
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-1 xs:col-span-2 m:col-start-7 mt-4 xs:mt-0">
+            <h5 class="font-extrabold text-center xs:text-left">Kontakt</h5>
+            <div class="flex flex-col space-y-2 text-sm mt-4 font-light">
+                <a
+                    href="mailto:info@devity.sk"
+                    class="animated-underline w-max mx-auto xs:ml-0"
+                >
+                    info@devity.sk
+                </a>
+                <span class="mx-auto xs:ml-0">DEVITY Software s.r.o.</span>
+                <span class="mx-auto xs:ml-0">Trieda KVP 1, Košice</span>
+                <span class="mx-auto xs:ml-0">IČO: 123456789</span>
+                <span class="mx-auto xs:ml-0">DIČ: 1234567890</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row justify-between text-[0.5rem] mt-10 font-light">
+        <span>© DEVITY Software s.r.o. 2023</span>
+        <span class="text-right">
+            Ilustrácie: Freepik&nbsp;
+            <a
+                href="https://www.freepik.com/author/vectorjuice"
+                target="_blank"
+            >
+                Vectrojuice
+            </a>
+        </span>
+    </div>
+</div>
