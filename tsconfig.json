@@ -6,7 +6,7 @@
             "@components/*": ["src/components/*"],
             "@layouts/*": ["src/layouts/*"],
             "@assetsLocal/*": ["src/assets/*"],
-            "@content/*": ["content/*"],
+            "@content/*": ["arc/content/*"],
             "@style/*": ["src/styles/*"],
             "@sections/*": ["src/sections/*"]
         }

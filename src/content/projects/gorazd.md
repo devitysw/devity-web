@@ -1,0 +1,16 @@
+---
+title: "Gorazd"
+description: "Ben"
+projectType: "Webová aplikácia"
+when: "2023"
+task: "Vytvoriť stranku pre ksolu"
+result: "Webová tsranka."
+resultLong: "vysledkom je bla bla bla"
+techStack: "C#, Blazor, TailwindCSS"
+projectsGoals1: "cielom bolo bla bla 1"
+projectsGoals2: "cielom bolo bla bla 2"
+path1: "cestou bolo bla bla 1"
+path2: "cestou bolo bla bla 2"
+conclusion: "zaver blah blah blah"
+url: ""
+---

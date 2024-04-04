@@ -1,0 +1,92 @@
+---
+import "../../styles/base.css";
+import { Image } from "astro:assets";
+
+import ContentLayout from "@layouts/ContentLayout.astro";
+
+import ProjectShort from "@components/ProjectShort.astro";
+
+import placeholder from "@assetsLocal/placeholder.png";
+
+import { getCollection, getEntries, getEntry } from "astro:content";
+
+export async function getStaticPaths() {
+    const paths = (await getCollection("projects")).map((post) => ({
+        params: { project: post.slug },
+    }));
+
+    return paths;
+}
+
+const { project } = Astro.params;
+
+//console.log(project);
+
+const dataIn = await getEntry("projects", project);
+
+const data = dataIn.data;
+
+//console.log(data);
+---
+
+<ContentLayout title={data.title}>
+    <h1 class="text-dark mt-10 font-bold">{data.title}</h1>
+    <div class="grid grid-cols-1 m:grid-cols-6 gap-4 mt-12">
+        <div class="col-span-2 flex flex-col space-y-4 pr-8">
+            <ProjectShort title="Typ projektu" desc={data.projectType} />
+            <ProjectShort title="Kedy" desc={data.when} />
+            <ProjectShort title="Úloha" desc={data.task} />
+            <ProjectShort title="Výsledok" desc={data.result} />
+            <ProjectShort title="Použité technológie" desc={data.techStack} />
+            <a href={data.url} class="button-lime text-center"
+                >Stránka produktu</a
+            >
+        </div>
+        <div class="col-span-4">
+            <h4 class="text-lightPurple mt-8 m:mt-0">{data.description}</h4>
+
+            <h2 class="text-purple mt-10 uppercase font-bold">Cieľ projektu</h2>
+            <p class="mt-2">
+                {data.projectGoal1}
+            </p>
+            <Image
+                src={placeholder}
+                alt="placeholder image"
+                class="w-full my-4"
+            />
+            <p class="mt-2">
+                {data.projectGoal2}
+            </p>
+
+            <h2 class="text-purple mt-10 uppercase font-bold">
+                Cesta k riešeniu
+            </h2>
+            <p class="mt-2">
+                {data.path1}
+            </p>
+            <Image
+                src={placeholder}
+                alt="placeholder image"
+                class="w-full my-4"
+            />
+            <p class="mt-2">
+                {data.path2}
+            </p>
+
+            <h2 class="text-purple mt-10 uppercase font-bold">Výsledok</h2>
+            <p>
+                {data.resultLong}
+            </p>
+            <Image
+                src={placeholder}
+                alt="placeholder image"
+                class="w-full my-4"
+            />
+
+            <h2 class="text-purple mt-10 uppercase font-bold">Záver</h2>
+            <p class="mt-2">
+                {data.conclusion}
+            </p>
+        </div>
+    </div>
+</ContentLayout>
