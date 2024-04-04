@@ -1,5 +1,6 @@
 ---
 import logo from "@assetsLocal/logo/logo-landscape-white.svg";
+import TextDecor from "./TextDecor.astro";
 ---
 
 <div class="content bg-dark text-light rounded-3xl px-8 py-6">
@@ -13,7 +14,9 @@ import logo from "@assetsLocal/logo/logo-landscape-white.svg";
         />
 
         <div class="col-span-1 xs:col-span-2 m:col-start-4">
-            <h5 class="font-extrabold text-center xs:text-left">Odkazy</h5>
+            <h5 class="font-extrabold text-center xs:text-left">
+                <TextDecor text="Odkazy" color="purple" />
+            </h5>
             <div class="flex flex-col space-y-2 text-sm mt-4 font-light">
                 <a href="" class="animated-underline w-max mx-auto xs:ml-0">
                     Projekty
@@ -24,14 +27,13 @@ import logo from "@assetsLocal/logo/logo-landscape-white.svg";
                 <a href="" class="animated-underline w-max mx-auto xs:ml-0">
                     Technológie
                 </a>
-                <a href="" class="animated-underline w-max mx-auto xs:ml-0">
-                    Proces vývoja
-                </a>
             </div>
         </div>
 
         <div class="col-span-1 xs:col-span-2 m:col-start-7 mt-4 xs:mt-0">
-            <h5 class="font-extrabold text-center xs:text-left">Kontakt</h5>
+            <h5 class="font-extrabold text-center xs:text-left">
+                <TextDecor text="Kontakt" color="lime" />
+            </h5>
             <div class="flex flex-col space-y-2 text-sm mt-4 font-light">
                 <a
                     href="mailto:info@devity.sk"

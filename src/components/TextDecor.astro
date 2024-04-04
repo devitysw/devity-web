@@ -1,0 +1,28 @@
+---
+const { color, text } = Astro.props;
+
+import limeDecor from "@assetsLocal/decor-lime.svg";
+import purpleDecor from "@assetsLocal/decor-purple.svg";
+---
+
+{
+    color === "lime" ? (
+        <span class="relative">
+            <span>{text}</span>
+            <img
+                src={limeDecor.src}
+                alt="decorative line"
+                class="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+            />
+        </span>
+    ) : (
+        <span class="relative w-max">
+            <span>{text}</span>
+            <img
+                src={purpleDecor.src}
+                alt="deocrative line"
+                class="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+            />
+        </span>
+    )
+}
