@@ -1,18 +1,6 @@
 ---
-interface Props {
-    title: string;
-}
-
-const { title } = Astro.props;
-
-import "../styles/base.css";
-
 import favicon from "@assetsLocal/logo/favicon.ico";
-
-import Navbar from "@components/Navbar.astro";
-import Footer from "@components/Footer.astro";
 ---
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -21,7 +9,8 @@ import Footer from "@components/Footer.astro";
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#2a28a4" />
         <meta name="description" content="DEVITY Software online portfolio." />
-        <title>{title} | DEVITY Software</title>
+        <meta http-equiv="refresh" content="0; url=https://github.com/KatkaKoreckova/programko" />
+        <title>Programko | DEVITY Software</title>
         <link
             rel="shortcut icon"
             type="image/x-icon"
@@ -36,13 +25,8 @@ import Footer from "@components/Footer.astro";
             rel="stylesheet"
         />
     </head>
-    <body class="py-4 flex flex-col space-y-8">
-        <Navbar />
-        <main class="flex flex-col space-y-8">
-            <slot />
-        </main>
-        <Footer />
-        <script src="../scripts/burger-menu.js"></script>
+    <body>
+        <h1>Redirect ...</h1>
         <script defer src="https://analytics.devity.sk/script.js" data-website-id="3fca1d94-623b-447c-b420-720406301f9d"></script>
     </body>
 </html>
